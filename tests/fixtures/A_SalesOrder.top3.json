@@ -1,0 +1,48 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder('1')",
+          "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder('1')",
+          "type": "API_SALES_ORDER_SRV.A_SalesOrderType",
+          "etag": "W/\"datetimeoffset'2016-09-02T06%3A15%3A47.1257050Z'\""
+        },
+        "SalesOrder": "1",
+        "SalesOrderType": "OR",
+        "SoldToParty": "17100001",
+        "CreationDate": "/Date(1471392000000)/",
+        "TotalNetAmount": "52.65",
+        "TransactionCurrency": "USD"
+      },
+      {
+        "__metadata": {
+          "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder('2')",
+          "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder('2')",
+          "type": "API_SALES_ORDER_SRV.A_SalesOrderType",
+          "etag": "W/\"datetimeoffset'2016-09-02T06%3A12%3A15.5198080Z'\""
+        },
+        "SalesOrder": "2",
+        "SalesOrderType": "OR",
+        "SoldToParty": "17100001",
+        "CreationDate": "/Date(1472774400000)/",
+        "TotalNetAmount": "353.50",
+        "TransactionCurrency": "USD"
+      },
+      {
+        "__metadata": {
+          "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder('3')",
+          "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder('3')",
+          "type": "API_SALES_ORDER_SRV.A_SalesOrderType",
+          "etag": "W/\"datetimeoffset'2016-09-06T04%3A31%3A00.3246240Z'\""
+        },
+        "SalesOrder": "3",
+        "SalesOrderType": "OR",
+        "SoldToParty": "17100001",
+        "CreationDate": "/Date(1473120000000)/",
+        "TotalNetAmount": "52.65",
+        "TransactionCurrency": "USD"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4418 @@
+{
+  "service": "API_SALES_ORDER_SRV",
+  "entity_sets": [
+    {
+      "name": "A_SalesOrder",
+      "entity_type": "A_SalesOrderType",
+      "label": null,
+      "keys": [
+        "SalesOrder"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderType",
+          "type": "Edm.String",
+          "label": "Sales Order Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "SalesOrderTypeInternalCode",
+          "type": "Edm.String",
+          "label": "Language key",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "SalesOrganization",
+          "type": "Edm.String",
+          "label": "Sales Organization",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "DistributionChannel",
+          "type": "Edm.String",
+          "label": "Distribution Channel",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "OrganizationDivision",
+          "type": "Edm.String",
+          "label": "Division",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "SalesGroup",
+          "type": "Edm.String",
+          "label": "Sales Group",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "SalesOffice",
+          "type": "Edm.String",
+          "label": "Sales Office",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "SalesDistrict",
+          "type": "Edm.String",
+          "label": "Sales District",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "SoldToParty",
+          "type": "Edm.String",
+          "label": "Sold-to Party",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "CreationDate",
+          "type": "Edm.DateTime",
+          "label": "Created On",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CreatedByUser",
+          "type": "Edm.String",
+          "label": "Created By",
+          "nullable": true,
+          "max_length": 12
+        },
+        {
+          "name": "LastChangeDate",
+          "type": "Edm.DateTime",
+          "label": "Changed On",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "SenderBusinessSystemName",
+          "type": "Edm.String",
+          "label": "Ext. Bus. Syst. ID",
+          "nullable": true,
+          "max_length": 60
+        },
+        {
+          "name": "ExternalDocumentID",
+          "type": "Edm.String",
+          "label": "External Document ID",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "LastChangeDateTime",
+          "type": "Edm.DateTimeOffset",
+          "label": "Time Stamp",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ExternalDocLastChangeDateTime",
+          "type": "Edm.DateTimeOffset",
+          "label": "External Revision",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PurchaseOrderByCustomer",
+          "type": "Edm.String",
+          "label": "Customer Reference",
+          "nullable": true,
+          "max_length": 35
+        },
+        {
+          "name": "PurchaseOrderByShipToParty",
+          "type": "Edm.String",
+          "label": "Customer Reference (Ship-to Party)",
+          "nullable": true,
+          "max_length": 35
+        },
+        {
+          "name": "CustomerPurchaseOrderType",
+          "type": "Edm.String",
+          "label": "Purchase Order Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "CustomerPurchaseOrderDate",
+          "type": "Edm.DateTime",
+          "label": "Customer Reference Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "SalesOrderDate",
+          "type": "Edm.DateTime",
+          "label": "Document Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TotalNetAmount",
+          "type": "Edm.Decimal",
+          "label": "Net Value",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "OverallDeliveryStatus",
+          "type": "Edm.String",
+          "label": "Delivery Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "TotalBlockStatus",
+          "type": "Edm.String",
+          "label": "Overall Block Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "OverallOrdReltdBillgStatus",
+          "type": "Edm.String",
+          "label": "Order-Related Billing Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "OverallSDDocReferenceStatus",
+          "type": "Edm.String",
+          "label": "Reference Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "TransactionCurrency",
+          "type": "Edm.String",
+          "label": "Document Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "SDDocumentReason",
+          "type": "Edm.String",
+          "label": "Order Reason",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "PricingDate",
+          "type": "Edm.DateTime",
+          "label": "Pricing Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PriceDetnExchangeRate",
+          "type": "Edm.Decimal",
+          "label": "Exchange Rate",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlan",
+          "type": "Edm.String",
+          "label": "Bill. Plan No.",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "RequestedDeliveryDate",
+          "type": "Edm.DateTime",
+          "label": "Requested Delivery Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ShippingCondition",
+          "type": "Edm.String",
+          "label": "Shipping Conditions",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "CompleteDeliveryIsDefined",
+          "type": "Edm.Boolean",
+          "label": "Complete Delivery",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ShippingType",
+          "type": "Edm.String",
+          "label": "Shipping Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "HeaderBillingBlockReason",
+          "type": "Edm.String",
+          "label": "Billing Block",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "DeliveryBlockReason",
+          "type": "Edm.String",
+          "label": "Delivery Block",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "DeliveryDateTypeRule",
+          "type": "Edm.String",
+          "label": "Delivery Date Rule",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IncotermsClassification",
+          "type": "Edm.String",
+          "label": "Incoterms",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "IncotermsTransferLocation",
+          "type": "Edm.String",
+          "label": "Incoterms (Part 2)",
+          "nullable": true,
+          "max_length": 28
+        },
+        {
+          "name": "IncotermsLocation1",
+          "type": "Edm.String",
+          "label": "Incoterms Location 1",
+          "nullable": true,
+          "max_length": 70
+        },
+        {
+          "name": "IncotermsLocation2",
+          "type": "Edm.String",
+          "label": "Incoterms Location 2",
+          "nullable": true,
+          "max_length": 70
+        },
+        {
+          "name": "IncotermsVersion",
+          "type": "Edm.String",
+          "label": "Incoterms Version",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "CustomerPriceGroup",
+          "type": "Edm.String",
+          "label": "Customer Price Group",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "PriceListType",
+          "type": "Edm.String",
+          "label": "Price List Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "CustomerPaymentTerms",
+          "type": "Edm.String",
+          "label": "Terms of Payment",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "PaymentMethod",
+          "type": "Edm.String",
+          "label": "Payment Method",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "FixedValueDate",
+          "type": "Edm.DateTime",
+          "label": "Fixed Value Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "AssignmentReference",
+          "type": "Edm.String",
+          "label": "Assignment",
+          "nullable": true,
+          "max_length": 18
+        },
+        {
+          "name": "ReferenceSDDocument",
+          "type": "Edm.String",
+          "label": "Reference Document",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "ReferenceSDDocumentCategory",
+          "type": "Edm.String",
+          "label": "Reference Document Category",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "AccountingDocExternalReference",
+          "type": "Edm.String",
+          "label": "Reference",
+          "nullable": true,
+          "max_length": 16
+        },
+        {
+          "name": "CustomerAccountAssignmentGroup",
+          "type": "Edm.String",
+          "label": "Account Assignment Group for Customer",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "AccountingExchangeRate",
+          "type": "Edm.Decimal",
+          "label": "Exchng. Rate Accntg.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CustomerGroup",
+          "type": "Edm.String",
+          "label": "Customer Group",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "AdditionalCustomerGroup1",
+          "type": "Edm.String",
+          "label": "Customer Group 1",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "AdditionalCustomerGroup2",
+          "type": "Edm.String",
+          "label": "Customer Group 2",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "AdditionalCustomerGroup3",
+          "type": "Edm.String",
+          "label": "Customer Group 3",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "AdditionalCustomerGroup4",
+          "type": "Edm.String",
+          "label": "Customer Group 4",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "AdditionalCustomerGroup5",
+          "type": "Edm.String",
+          "label": "Customer Group 5",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "SlsDocIsRlvtForProofOfDeliv",
+          "type": "Edm.Boolean",
+          "label": "Relevant for Proof of Delivery",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CustomerTaxClassification1",
+          "type": "Edm.String",
+          "label": "Alt.Tax Classific.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CustomerTaxClassification2",
+          "type": "Edm.String",
+          "label": "Tax Class.2 Customer",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CustomerTaxClassification3",
+          "type": "Edm.String",
+          "label": "Tax Class.3 Customer",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CustomerTaxClassification4",
+          "type": "Edm.String",
+          "label": "Tax Class.4 Customer",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CustomerTaxClassification5",
+          "type": "Edm.String",
+          "label": "Tax Class.5 Customer",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CustomerTaxClassification6",
+          "type": "Edm.String",
+          "label": "Tax Class.6 Customer",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CustomerTaxClassification7",
+          "type": "Edm.String",
+          "label": "Tax Class.7 Customer",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CustomerTaxClassification8",
+          "type": "Edm.String",
+          "label": "Tax Class.8 Customer",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CustomerTaxClassification9",
+          "type": "Edm.String",
+          "label": "Tax Class.9 Customer",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "TaxDepartureCountry",
+          "type": "Edm.String",
+          "label": "Tax Departure Country/Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "VATRegistrationCountry",
+          "type": "Edm.String",
+          "label": "Tax Destination Country/Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "SalesOrderApprovalReason",
+          "type": "Edm.String",
+          "label": "Approval Request Reason",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "SalesDocApprovalStatus",
+          "type": "Edm.String",
+          "label": "Approval Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "OverallSDProcessStatus",
+          "type": "Edm.String",
+          "label": "Overall Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "TotalCreditCheckStatus",
+          "type": "Edm.String",
+          "label": "Credit Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "OverallTotalDeliveryStatus",
+          "type": "Edm.String",
+          "label": "Overall Delivery Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "OverallSDDocumentRejectionSts",
+          "type": "Edm.String",
+          "label": "Rejection Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BillingDocumentDate",
+          "type": "Edm.DateTime",
+          "label": "Billing Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ContractAccount",
+          "type": "Edm.String",
+          "label": "Contract Account",
+          "nullable": true,
+          "max_length": 12
+        },
+        {
+          "name": "AdditionalValueDays",
+          "type": "Edm.String",
+          "label": "Addit. Value Days",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "CustomerPurchaseOrderSuplmnt",
+          "type": "Edm.String",
+          "label": "Supplement",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ServicesRenderedDate",
+          "type": "Edm.DateTime",
+          "label": "Date of Services Rendered",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_BillingPlan",
+          "target_entity_set": "A_SalesOrderBillingPlan",
+          "target_entity_type": "A_SalesOrderBillingPlanType",
+          "relationship": "assoc_87B95E2FF05003503D3BBFB685033F01"
+        },
+        {
+          "name": "to_Item",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_42CCE6159E335C5B7697EE6BC8D37107"
+        },
+        {
+          "name": "to_Partner",
+          "target_entity_set": "A_SalesOrderHeaderPartner",
+          "target_entity_type": "A_SalesOrderHeaderPartnerType",
+          "relationship": "assoc_E0F0B75CE5743C11AC56990C6083E0BA"
+        },
+        {
+          "name": "to_PaymentPlanItemDetails",
+          "target_entity_set": "A_SlsOrdPaymentPlanItemDetails",
+          "target_entity_type": "A_SlsOrdPaymentPlanItemDetailsType",
+          "relationship": "assoc_44F7AAFBAB4403914DD21D2B054AE91D"
+        },
+        {
+          "name": "to_PrecedingProcFlowDoc",
+          "target_entity_set": "A_SalesOrderPrecdgProcFlow",
+          "target_entity_type": "A_SalesOrderPrecdgProcFlowType",
+          "relationship": "assoc_577AB391D9FD55D03CAB46C1B356E8AE"
+        },
+        {
+          "name": "to_PricingElement",
+          "target_entity_set": "A_SalesOrderHeaderPrElement",
+          "target_entity_type": "A_SalesOrderHeaderPrElementType",
+          "relationship": "assoc_5C52AA5C0E6EBBDD6C9EA9E0A4FFAE21"
+        },
+        {
+          "name": "to_RelatedObject",
+          "target_entity_set": "A_SalesOrderRelatedObject",
+          "target_entity_type": "A_SalesOrderRelatedObjectType",
+          "relationship": "assoc_FC8CB6FADAC06D48C24B6CBB3705CA85"
+        },
+        {
+          "name": "to_SubsequentProcFlowDoc",
+          "target_entity_set": "A_SalesOrderSubsqntProcFlow",
+          "target_entity_type": "A_SalesOrderSubsqntProcFlowType",
+          "relationship": "assoc_AD05567429A25C024E50197869C4E316"
+        },
+        {
+          "name": "to_Text",
+          "target_entity_set": "A_SalesOrderText",
+          "target_entity_type": "A_SalesOrderTextType",
+          "relationship": "assoc_D06EF7DEC5E9B78C200493F21B05A94E"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderBillingPlan",
+      "entity_type": "A_SalesOrderBillingPlanType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "BillingPlan"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "BillingPlan",
+          "type": "Edm.String",
+          "label": "Bill. Plan No.",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "BillingPlanStartDate",
+          "type": "Edm.DateTime",
+          "label": "Start Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanStartDateRule",
+          "type": "Edm.String",
+          "label": "Origin of Start Date",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ReferenceBillingPlan",
+          "type": "Edm.String",
+          "label": "Reference",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "BillingPlanCategory",
+          "type": "Edm.String",
+          "label": "Category",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BillingPlanType",
+          "type": "Edm.String",
+          "label": "Billing Plan Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "BillingPlanEndDate",
+          "type": "Edm.DateTime",
+          "label": "End Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanEndDateRule",
+          "type": "Edm.String",
+          "label": "Origin End Date",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "BillingPlanSearchTerm",
+          "type": "Edm.String",
+          "label": "Search Term",
+          "nullable": true,
+          "max_length": 10
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_BillingPlanItem",
+          "target_entity_set": "A_SalesOrderBillingPlanItem",
+          "target_entity_type": "A_SalesOrderBillingPlanItemType",
+          "relationship": "assoc_5D689CB77C3A02C75072066B8E114BD5"
+        },
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_5F3C8D005BC25DAB723F9D6EFCF1E418"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderBillingPlanItem",
+      "entity_type": "A_SalesOrderBillingPlanItemType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "BillingPlan",
+        "BillingPlanItem"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "BillingPlan",
+          "type": "Edm.String",
+          "label": "Bill. Plan No.",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "BillingPlanItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "BillingPlanDateCategory",
+          "type": "Edm.String",
+          "label": "Date Category",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "BillingPlanBillingDate",
+          "type": "Edm.DateTime",
+          "label": "Billing Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanAmount",
+          "type": "Edm.Decimal",
+          "label": "Billing Value",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TransactionCurrency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "BillingPlanAmountPercent",
+          "type": "Edm.Decimal",
+          "label": "Invoice Percentage",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CustomerPaymentTerms",
+          "type": "Edm.String",
+          "label": "Terms of Payment",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProposedBillingDocumentType",
+          "type": "Edm.String",
+          "label": "Billing Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "BillingPlanDateDescriptionCode",
+          "type": "Edm.String",
+          "label": "Date Description",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "BillingBlockReason",
+          "type": "Edm.String",
+          "label": "Billing Block",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "BillingPlanServiceStartDate",
+          "type": "Edm.DateTime",
+          "label": "Settlement Start Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanServiceEndDate",
+          "type": "Edm.DateTime",
+          "label": "Settlement End Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanRelatedBillgStatus",
+          "type": "Edm.String",
+          "label": "Billing Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BillingPlanType",
+          "type": "Edm.String",
+          "label": "Billing Plan Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "AdoptingBillingDateID",
+          "type": "Edm.String",
+          "label": "Fixed Date",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BillingPlanBillingRule",
+          "type": "Edm.String",
+          "label": "Billing Rule",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BillingPlanMilestoneUsage",
+          "type": "Edm.String",
+          "label": "Usage",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "BillgPlnDteCorrectionRfndType",
+          "type": "Edm.String",
+          "label": "Correction Date",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "AccountingExchangeRate",
+          "type": "Edm.Decimal",
+          "label": "Accounting Exchange Rate",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PostponementReason",
+          "type": "Edm.String",
+          "label": "Reason",
+          "nullable": true,
+          "max_length": 255
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_BillingPlan",
+          "target_entity_set": "A_SalesOrderBillingPlan",
+          "target_entity_type": "A_SalesOrderBillingPlanType",
+          "relationship": "assoc_A3D5AB9EA060CEF6A8578893E76A2096"
+        },
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_977AB9F0560A0DE910D5ACE14886454B"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderHeaderPartner",
+      "entity_type": "A_SalesOrderHeaderPartnerType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "PartnerFunction"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "PartnerFunction",
+          "type": "Edm.String",
+          "label": "Partner Function",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "PartnerFunctionInternalCode",
+          "type": "Edm.String",
+          "label": "Partner Function",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "Customer",
+          "type": "Edm.String",
+          "label": "Customer",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "Supplier",
+          "type": "Edm.String",
+          "label": "Supplier",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "Personnel",
+          "type": "Edm.String",
+          "label": "Personnel Number",
+          "nullable": true,
+          "max_length": 8
+        },
+        {
+          "name": "ContactPerson",
+          "type": "Edm.String",
+          "label": "Contact Person",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "WorkAssignmentExternalID",
+          "type": "Edm.String",
+          "label": "Work Agreement ID",
+          "nullable": true,
+          "max_length": 100
+        },
+        {
+          "name": "ReferenceBusinessPartner",
+          "type": "Edm.String",
+          "label": "Business Partner",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "AddressID",
+          "type": "Edm.String",
+          "label": "Address Number",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "VATRegistration",
+          "type": "Edm.String",
+          "label": "VAT Registration No.",
+          "nullable": true,
+          "max_length": 20
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_Address",
+          "target_entity_set": "A_SalesOrderPartnerAddress",
+          "target_entity_type": "A_SalesOrderPartnerAddressType",
+          "relationship": "assoc_4DA875F2363EE93335C73F5B493D553E"
+        },
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_8F721694C94560109555442071763439"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderHeaderPrElement",
+      "entity_type": "A_SalesOrderHeaderPrElementType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "PricingProcedureStep",
+        "PricingProcedureCounter"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "PricingProcedureStep",
+          "type": "Edm.String",
+          "label": "Step Number",
+          "nullable": false,
+          "max_length": 3
+        },
+        {
+          "name": "PricingProcedureCounter",
+          "type": "Edm.String",
+          "label": "Counter",
+          "nullable": false,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionType",
+          "type": "Edm.String",
+          "label": "Condition Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "PricingDateTime",
+          "type": "Edm.String",
+          "label": "Valid From",
+          "nullable": true,
+          "max_length": 14
+        },
+        {
+          "name": "PriceConditionDeterminationDte",
+          "type": "Edm.DateTime",
+          "label": "Condition Pricing Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionCalculationType",
+          "type": "Edm.String",
+          "label": "Calculation Type",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionBaseValue",
+          "type": "Edm.Decimal",
+          "label": "Condition Basis",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionRateValue",
+          "type": "Edm.Decimal",
+          "label": "Amount",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionCurrency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "ConditionQuantity",
+          "type": "Edm.Decimal",
+          "label": "Pricing Unit",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionQuantityUnit",
+          "type": "Edm.String",
+          "label": "Condition Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionQuantitySAPUnit",
+          "type": "Edm.String",
+          "label": "SAP Condition Qty",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionQuantityISOUnit",
+          "type": "Edm.String",
+          "label": "ISO Condition Qty",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionCategory",
+          "type": "Edm.String",
+          "label": "Condition Category",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionIsForStatistics",
+          "type": "Edm.Boolean",
+          "label": "Statistical",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PricingScaleType",
+          "type": "Edm.String",
+          "label": "Scale Type",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionOrigin",
+          "type": "Edm.String",
+          "label": "Condition Origin",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IsGroupCondition",
+          "type": "Edm.String",
+          "label": "Group Condition",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionRecord",
+          "type": "Edm.String",
+          "label": "Condition Record No.",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "ConditionSequentialNumber",
+          "type": "Edm.String",
+          "label": "Sequent.No. of Cond.",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "TaxCode",
+          "type": "Edm.String",
+          "label": "Tax Code",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "WithholdingTaxCode",
+          "type": "Edm.String",
+          "label": "W/Tax Code",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "CndnRoundingOffDiffAmount",
+          "type": "Edm.Decimal",
+          "label": "Condition Rounding Difference",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionAmount",
+          "type": "Edm.Decimal",
+          "label": "Condition Value",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TransactionCurrency",
+          "type": "Edm.String",
+          "label": "Document Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "ConditionControl",
+          "type": "Edm.String",
+          "label": "Condition Control",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionInactiveReason",
+          "type": "Edm.String",
+          "label": "Inactive Condition",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionClass",
+          "type": "Edm.String",
+          "label": "Condition Class",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PrcgProcedureCounterForHeader",
+          "type": "Edm.String",
+          "label": "Counter",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FactorForConditionBasisValue",
+          "type": "Edm.Double",
+          "label": "Condition Factor",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "StructureCondition",
+          "type": "Edm.String",
+          "label": "Structure Condition",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PeriodFactorForCndnBasisValue",
+          "type": "Edm.Double",
+          "label": "Condition Factor",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PricingScaleBasis",
+          "type": "Edm.String",
+          "label": "Scale Basis",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionScaleBasisValue",
+          "type": "Edm.Decimal",
+          "label": "Scale Base Val.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionScaleBasisUnit",
+          "type": "Edm.String",
+          "label": "Scale Unit of Meas.",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionScaleBasisCurrency",
+          "type": "Edm.String",
+          "label": "Scale Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "CndnIsRelevantForIntcoBilling",
+          "type": "Edm.Boolean",
+          "label": "Intercomp.Billing",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionIsManuallyChanged",
+          "type": "Edm.Boolean",
+          "label": "Changed Manually",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionIsForConfiguration",
+          "type": "Edm.Boolean",
+          "label": "UsedforVariantConfig",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "VariantCondition",
+          "type": "Edm.String",
+          "label": "Variant Key",
+          "nullable": true,
+          "max_length": 26
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_C516ABBC5925268953A9AC7D6F836887"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderItem",
+      "entity_type": "A_SalesOrderItemType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "HigherLevelItem",
+          "type": "Edm.String",
+          "label": "Higher-Level Item",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "HigherLevelItemUsage",
+          "type": "Edm.String",
+          "label": "Usage of HL Item",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "SalesOrderItemCategory",
+          "type": "Edm.String",
+          "label": "Item Category",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "SalesOrderItemText",
+          "type": "Edm.String",
+          "label": "Item Description",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "PurchaseOrderByCustomer",
+          "type": "Edm.String",
+          "label": "Customer Reference",
+          "nullable": true,
+          "max_length": 35
+        },
+        {
+          "name": "PurchaseOrderByShipToParty",
+          "type": "Edm.String",
+          "label": "Customer Reference (Ship-to Party)",
+          "nullable": true,
+          "max_length": 35
+        },
+        {
+          "name": "UnderlyingPurchaseOrderItem",
+          "type": "Edm.String",
+          "label": "Purchase Order Item",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "ExternalItemID",
+          "type": "Edm.String",
+          "label": "External Item ID",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "Material",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "MaterialByCustomer",
+          "type": "Edm.String",
+          "label": "Customer Material",
+          "nullable": true,
+          "max_length": 35
+        },
+        {
+          "name": "PricingDate",
+          "type": "Edm.DateTime",
+          "label": "Pricing Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PricingReferenceMaterial",
+          "type": "Edm.String",
+          "label": "Pricing Ref. Matl",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "BillingPlan",
+          "type": "Edm.String",
+          "label": "Bill. Plan No.",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "RequestedQuantity",
+          "type": "Edm.Decimal",
+          "label": "Requested Quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "RequestedQuantityUnit",
+          "type": "Edm.String",
+          "label": "Requested Qty Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "RequestedQuantitySAPUnit",
+          "type": "Edm.String",
+          "label": "SAP Code Req. Qty",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "RequestedQuantityISOUnit",
+          "type": "Edm.String",
+          "label": "ISO Code Req. Qty",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "OrderQuantityUnit",
+          "type": "Edm.String",
+          "label": "Sales Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "OrderQuantitySAPUnit",
+          "type": "Edm.String",
+          "label": "SAP Order Quantity",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "OrderQuantityISOUnit",
+          "type": "Edm.String",
+          "label": "ISO Order Quantity",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConfdDelivQtyInOrderQtyUnit",
+          "type": "Edm.Decimal",
+          "label": "Confirmed Quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ItemGrossWeight",
+          "type": "Edm.Decimal",
+          "label": "Gross Weight",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ItemNetWeight",
+          "type": "Edm.Decimal",
+          "label": "Net Weight",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ItemWeightUnit",
+          "type": "Edm.String",
+          "label": "Unit of Weight",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ItemWeightSAPUnit",
+          "type": "Edm.String",
+          "label": "SAP Code Item Weight",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ItemWeightISOUnit",
+          "type": "Edm.String",
+          "label": "ISO Code Item Weight",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ItemVolume",
+          "type": "Edm.Decimal",
+          "label": "Volume",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ItemVolumeUnit",
+          "type": "Edm.String",
+          "label": "Volume Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ItemVolumeSAPUnit",
+          "type": "Edm.String",
+          "label": "SAP Code f Item Vol.",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ItemVolumeISOUnit",
+          "type": "Edm.String",
+          "label": "ISO Unit Item Volume",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "OriginallyRequestedMaterial",
+          "type": "Edm.String",
+          "label": "Material Entered",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "TransactionCurrency",
+          "type": "Edm.String",
+          "label": "Document Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "NetAmount",
+          "type": "Edm.Decimal",
+          "label": "Net Value",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TotalSDDocReferenceStatus",
+          "type": "Edm.String",
+          "label": "Ovrl Reference Sts",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "SDDocReferenceStatus",
+          "type": "Edm.String",
+          "label": "Reference Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "MaterialSubstitutionReason",
+          "type": "Edm.String",
+          "label": "Substitution Reason",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "MaterialGroup",
+          "type": "Edm.String",
+          "label": "Material Group",
+          "nullable": true,
+          "max_length": 9
+        },
+        {
+          "name": "MaterialPricingGroup",
+          "type": "Edm.String",
+          "label": "Product Price Group",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "AdditionalMaterialGroup1",
+          "type": "Edm.String",
+          "label": "Material Group 1",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "AdditionalMaterialGroup2",
+          "type": "Edm.String",
+          "label": "Material Group 2",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "AdditionalMaterialGroup3",
+          "type": "Edm.String",
+          "label": "Material Group 3",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "AdditionalMaterialGroup4",
+          "type": "Edm.String",
+          "label": "Material Group 4",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "AdditionalMaterialGroup5",
+          "type": "Edm.String",
+          "label": "Material Group 5",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "BillingDocumentDate",
+          "type": "Edm.DateTime",
+          "label": "Billing Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ContractAccount",
+          "type": "Edm.String",
+          "label": "Contract Account",
+          "nullable": true,
+          "max_length": 12
+        },
+        {
+          "name": "AdditionalValueDays",
+          "type": "Edm.String",
+          "label": "Addit. Value Days",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ServicesRenderedDate",
+          "type": "Edm.DateTime",
+          "label": "Date of Services Rendered",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "Batch",
+          "type": "Edm.String",
+          "label": "Batch",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "ProductionPlant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "OriginalPlant",
+          "type": "Edm.String",
+          "label": "Original Plant",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "AltvBsdConfSubstitutionStatus",
+          "type": "Edm.String",
+          "label": "Substitution Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "StorageLocation",
+          "type": "Edm.String",
+          "label": "Storage Location",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "DeliveryGroup",
+          "type": "Edm.String",
+          "label": "Delivery Group",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ShippingPoint",
+          "type": "Edm.String",
+          "label": "Shipping Point",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ShippingType",
+          "type": "Edm.String",
+          "label": "Shipping Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "DeliveryPriority",
+          "type": "Edm.String",
+          "label": "Delivery Priority",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "DeliveryDateQuantityIsFixed",
+          "type": "Edm.Boolean",
+          "label": "Fixed Date and Qty",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "DeliveryDateTypeRule",
+          "type": "Edm.String",
+          "label": "Deliv Date Rule",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IncotermsClassification",
+          "type": "Edm.String",
+          "label": "Incoterms",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "IncotermsTransferLocation",
+          "type": "Edm.String",
+          "label": "Incoterms (Part 2)",
+          "nullable": true,
+          "max_length": 28
+        },
+        {
+          "name": "IncotermsLocation1",
+          "type": "Edm.String",
+          "label": "Incoterms Location 1",
+          "nullable": true,
+          "max_length": 70
+        },
+        {
+          "name": "IncotermsLocation2",
+          "type": "Edm.String",
+          "label": "Incoterms Location 2",
+          "nullable": true,
+          "max_length": 70
+        },
+        {
+          "name": "TaxAmount",
+          "type": "Edm.Decimal",
+          "label": "Tax Amount",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductTaxClassification1",
+          "type": "Edm.String",
+          "label": "Tax Classifc. Mat.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductTaxClassification2",
+          "type": "Edm.String",
+          "label": "Tax Classifc. Mat.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductTaxClassification3",
+          "type": "Edm.String",
+          "label": "Tax Classifc. Mat.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductTaxClassification4",
+          "type": "Edm.String",
+          "label": "Tax Classifc. Mat.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductTaxClassification5",
+          "type": "Edm.String",
+          "label": "Tax Classifc. Mat.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductTaxClassification6",
+          "type": "Edm.String",
+          "label": "Tax Classifc. Mat.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductTaxClassification7",
+          "type": "Edm.String",
+          "label": "Tax Classifc. Mat.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductTaxClassification8",
+          "type": "Edm.String",
+          "label": "Tax Classifc. Mat.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductTaxClassification9",
+          "type": "Edm.String",
+          "label": "Tax Classifc. Mat.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "MatlAccountAssignmentGroup",
+          "type": "Edm.String",
+          "label": "Acct Assmt Grp Mat.",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "CostAmount",
+          "type": "Edm.Decimal",
+          "label": "Cost",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CustomerPaymentTerms",
+          "type": "Edm.String",
+          "label": "Terms of Payment",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "FixedValueDate",
+          "type": "Edm.DateTime",
+          "label": "Fixed Value Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CustomerGroup",
+          "type": "Edm.String",
+          "label": "Customer Group",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "SalesDocumentRjcnReason",
+          "type": "Edm.String",
+          "label": "Reason for Rejection",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ItemBillingBlockReason",
+          "type": "Edm.String",
+          "label": "Billing Block",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "SlsDocIsRlvtForProofOfDeliv",
+          "type": "Edm.Boolean",
+          "label": "Relevant for POD",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "WBSElement",
+          "type": "Edm.String",
+          "label": "WBS Element",
+          "nullable": true,
+          "max_length": 24
+        },
+        {
+          "name": "ProfitCenter",
+          "type": "Edm.String",
+          "label": "Profit Center",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "AccountingExchangeRate",
+          "type": "Edm.Decimal",
+          "label": "Exchng. Rate Accntg.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ReferenceSDDocument",
+          "type": "Edm.String",
+          "label": "Reference Document",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "ReferenceSDDocumentItem",
+          "type": "Edm.String",
+          "label": "Reference Item",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "SDProcessStatus",
+          "type": "Edm.String",
+          "label": "Overall Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "DeliveryStatus",
+          "type": "Edm.String",
+          "label": "Delivery Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "OrderRelatedBillingStatus",
+          "type": "Edm.String",
+          "label": "Order-Related Billing Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "Subtotal1Amount",
+          "type": "Edm.Decimal",
+          "label": "Subtotal 1",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "Subtotal2Amount",
+          "type": "Edm.Decimal",
+          "label": "Subtotal 2",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "Subtotal3Amount",
+          "type": "Edm.Decimal",
+          "label": "Subtotal 3",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "Subtotal4Amount",
+          "type": "Edm.Decimal",
+          "label": "Subtotal 4",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "Subtotal5Amount",
+          "type": "Edm.Decimal",
+          "label": "Subtotal 5",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "Subtotal6Amount",
+          "type": "Edm.Decimal",
+          "label": "Subtotal 6",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "YY1_Style_ID_SDI",
+          "type": "Edm.Decimal",
+          "label": "Style_ID",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "YY1_Engraving_SDI",
+          "type": "Edm.String",
+          "label": "Engraving",
+          "nullable": true,
+          "max_length": 20
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_BillingPlan",
+          "target_entity_set": "A_SalesOrderItemBillingPlan",
+          "target_entity_type": "A_SalesOrderItemBillingPlanType",
+          "relationship": "assoc_C82054ED63B31A623B1728117FF9FF27"
+        },
+        {
+          "name": "to_Partner",
+          "target_entity_set": "A_SalesOrderItemPartner",
+          "target_entity_type": "A_SalesOrderItemPartnerType",
+          "relationship": "assoc_5EBE73B545500EE6B48597931F7D5C56"
+        },
+        {
+          "name": "to_PrecedingProcFlowDocItem",
+          "target_entity_set": "A_SalesOrderItmPrecdgProcFlow",
+          "target_entity_type": "A_SalesOrderItmPrecdgProcFlowType",
+          "relationship": "assoc_EB31971BB1A05B4307DF43D8065A59B9"
+        },
+        {
+          "name": "to_PricingElement",
+          "target_entity_set": "A_SalesOrderItemPrElement",
+          "target_entity_type": "A_SalesOrderItemPrElementType",
+          "relationship": "assoc_A18E7EFDF1ADD05474B187D10B62BDBF"
+        },
+        {
+          "name": "to_RelatedObject",
+          "target_entity_set": "A_SalesOrderItemRelatedObject",
+          "target_entity_type": "A_SalesOrderItemRelatedObjectType",
+          "relationship": "assoc_F1AA3FF19127BA2AACCB88411D07649B"
+        },
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_1E8A9B3CA2EE8DAD94F8F581B21EABBD"
+        },
+        {
+          "name": "to_ScheduleLine",
+          "target_entity_set": "A_SalesOrderScheduleLine",
+          "target_entity_type": "A_SalesOrderScheduleLineType",
+          "relationship": "assoc_31BB747044FCC7AA5DA94B21FD458954"
+        },
+        {
+          "name": "to_SubsequentProcFlowDocItem",
+          "target_entity_set": "A_SalesOrderItmSubsqntProcFlow",
+          "target_entity_type": "A_SalesOrderItmSubsqntProcFlowType",
+          "relationship": "assoc_22B29D11A86ECF0426486D14F958C9C2"
+        },
+        {
+          "name": "to_Text",
+          "target_entity_set": "A_SalesOrderItemText",
+          "target_entity_type": "A_SalesOrderItemTextType",
+          "relationship": "assoc_3604F4165550FA74B882A4F3345D936F"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderItemBillingPlan",
+      "entity_type": "A_SalesOrderItemBillingPlanType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "BillingPlan"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "BillingPlan",
+          "type": "Edm.String",
+          "label": "Bill. Plan No.",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "BillingPlanIsInHeader",
+          "type": "Edm.Boolean",
+          "label": "Header Billing Plan",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanStartDate",
+          "type": "Edm.DateTime",
+          "label": "Start Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanStartDateRule",
+          "type": "Edm.String",
+          "label": "Origin of Start Date",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ReferenceBillingPlan",
+          "type": "Edm.String",
+          "label": "Reference",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "BillingPlanCategory",
+          "type": "Edm.String",
+          "label": "Category",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BillingPlanType",
+          "type": "Edm.String",
+          "label": "Billing Plan Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "BillingPlanEndDate",
+          "type": "Edm.DateTime",
+          "label": "End Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanEndDateRule",
+          "type": "Edm.String",
+          "label": "Origin End Date",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "BillingPlanSearchTerm",
+          "type": "Edm.String",
+          "label": "Search Term",
+          "nullable": true,
+          "max_length": 10
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_BillingPlanItem",
+          "target_entity_set": "A_SlsOrderItemBillingPlanItem",
+          "target_entity_type": "A_SlsOrderItemBillingPlanItemType",
+          "relationship": "assoc_ADA911BA66C64B3077C03942CCC7F612"
+        },
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_4DFEE24F95F2D8C024DFA5E33B69404A"
+        },
+        {
+          "name": "to_SalesOrderItem",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_FA04A473502ADBA74850FFC2CA66A179"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderItemPartner",
+      "entity_type": "A_SalesOrderItemPartnerType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "PartnerFunction"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "PartnerFunction",
+          "type": "Edm.String",
+          "label": "Partner Function",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "PartnerFunctionInternalCode",
+          "type": "Edm.String",
+          "label": "Partner Function",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "Customer",
+          "type": "Edm.String",
+          "label": "Customer",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "Supplier",
+          "type": "Edm.String",
+          "label": "Supplier",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "Personnel",
+          "type": "Edm.String",
+          "label": "Personnel Number",
+          "nullable": true,
+          "max_length": 8
+        },
+        {
+          "name": "ContactPerson",
+          "type": "Edm.String",
+          "label": "Contact Person",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "WorkAssignmentExternalID",
+          "type": "Edm.String",
+          "label": "Work Agreement ID",
+          "nullable": true,
+          "max_length": 100
+        },
+        {
+          "name": "ReferenceBusinessPartner",
+          "type": "Edm.String",
+          "label": "Business Partner",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "AddressID",
+          "type": "Edm.String",
+          "label": "Address Number",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "VATRegistration",
+          "type": "Edm.String",
+          "label": "VAT Registration No.",
+          "nullable": true,
+          "max_length": 20
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_Address",
+          "target_entity_set": "A_SalesOrderItemPartnerAddress",
+          "target_entity_type": "A_SalesOrderItemPartnerAddressType",
+          "relationship": "assoc_74BE4841D637E0BADC0EC8399AE46E7C"
+        },
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_DC6F0BF95AA2ABDAA77BD5D5D7640C00"
+        },
+        {
+          "name": "to_SalesOrderItem",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_2E7827BA025D2DC7290DEA3E71FF39FB"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderItemPartnerAddress",
+      "entity_type": "A_SalesOrderItemPartnerAddressType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "PartnerFunction",
+        "AddressRepresentationCode"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "SD Document",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Item (SD)",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "PartnerFunction",
+          "type": "Edm.String",
+          "label": "Partner Function",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "AddressRepresentationCode",
+          "type": "Edm.String",
+          "label": "Address Version",
+          "nullable": false,
+          "max_length": 1
+        },
+        {
+          "name": "CorrespondenceLanguage",
+          "type": "Edm.String",
+          "label": "Language Key",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "AddresseeFullName",
+          "type": "Edm.String",
+          "label": "Full Name",
+          "nullable": true,
+          "max_length": 80
+        },
+        {
+          "name": "OrganizationName1",
+          "type": "Edm.String",
+          "label": "Name",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "OrganizationName2",
+          "type": "Edm.String",
+          "label": "Name 2",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "OrganizationName3",
+          "type": "Edm.String",
+          "label": "Name 3",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "OrganizationName4",
+          "type": "Edm.String",
+          "label": "Name 4",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "CityName",
+          "type": "Edm.String",
+          "label": "City",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "DistrictName",
+          "type": "Edm.String",
+          "label": "District",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "PostalCode",
+          "type": "Edm.String",
+          "label": "Postal Code",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "StreetName",
+          "type": "Edm.String",
+          "label": "Street",
+          "nullable": true,
+          "max_length": 60
+        },
+        {
+          "name": "StreetPrefixName1",
+          "type": "Edm.String",
+          "label": "Street Address Non-Deliverable Reason",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "StreetPrefixName2",
+          "type": "Edm.String",
+          "label": "Street 3",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "StreetSuffixName1",
+          "type": "Edm.String",
+          "label": "Street 4",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "StreetSuffixName2",
+          "type": "Edm.String",
+          "label": "Street 5",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "HouseNumber",
+          "type": "Edm.String",
+          "label": "House Number",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "Country",
+          "type": "Edm.String",
+          "label": "Country/Region Key",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "Region",
+          "type": "Edm.String",
+          "label": "Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FormOfAddress",
+          "type": "Edm.String",
+          "label": "Title Key",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "TaxJurisdiction",
+          "type": "Edm.String",
+          "label": "Tax Jurisdiction",
+          "nullable": true,
+          "max_length": 15
+        },
+        {
+          "name": "TransportZone",
+          "type": "Edm.String",
+          "label": "Transportation Zone",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "POBox",
+          "type": "Edm.String",
+          "label": "PO Box",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "POBoxPostalCode",
+          "type": "Edm.String",
+          "label": "PO Box Postal Code",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "EmailAddress",
+          "type": "Edm.String",
+          "label": "Email Address",
+          "nullable": true,
+          "max_length": 241
+        },
+        {
+          "name": "MobilePhoneCountry",
+          "type": "Edm.String",
+          "label": "Country/Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "MobileNumber",
+          "type": "Edm.String",
+          "label": "Telephone",
+          "nullable": true,
+          "max_length": 30
+        },
+        {
+          "name": "PhoneNumberCountry",
+          "type": "Edm.String",
+          "label": "Country/Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "PhoneNumber",
+          "type": "Edm.String",
+          "label": "Telephone",
+          "nullable": true,
+          "max_length": 30
+        },
+        {
+          "name": "PhoneExtensionNumber",
+          "type": "Edm.String",
+          "label": "Extension",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "FaxNumberCountry",
+          "type": "Edm.String",
+          "label": "Country/Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FaxAreaCodeSubscriberNumber",
+          "type": "Edm.String",
+          "label": "Fax",
+          "nullable": true,
+          "max_length": 30
+        },
+        {
+          "name": "FaxExtensionNumber",
+          "type": "Edm.String",
+          "label": "Extension",
+          "nullable": true,
+          "max_length": 10
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_Partner",
+          "target_entity_set": "A_SalesOrderItemPartner",
+          "target_entity_type": "A_SalesOrderItemPartnerType",
+          "relationship": "assoc_5D9F9F34028B0E8B2B907492DCB248DD"
+        },
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_FC4CB7EA5C700BAA580F04FAE560CF55"
+        },
+        {
+          "name": "to_SalesOrderItem",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_34A114125DA3EF170E848725034D4E86"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderItemPrElement",
+      "entity_type": "A_SalesOrderItemPrElementType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "PricingProcedureStep",
+        "PricingProcedureCounter"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "PricingProcedureStep",
+          "type": "Edm.String",
+          "label": "Step Number",
+          "nullable": false,
+          "max_length": 3
+        },
+        {
+          "name": "PricingProcedureCounter",
+          "type": "Edm.String",
+          "label": "Counter",
+          "nullable": false,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionType",
+          "type": "Edm.String",
+          "label": "Condition Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "PricingDateTime",
+          "type": "Edm.String",
+          "label": "Valid From",
+          "nullable": true,
+          "max_length": 14
+        },
+        {
+          "name": "PriceConditionDeterminationDte",
+          "type": "Edm.DateTime",
+          "label": "Condition Pricing Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionCalculationType",
+          "type": "Edm.String",
+          "label": "Calculation Type",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionBaseValue",
+          "type": "Edm.Decimal",
+          "label": "Condition Basis",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionRateValue",
+          "type": "Edm.Decimal",
+          "label": "Amount",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionCurrency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "ConditionQuantity",
+          "type": "Edm.Decimal",
+          "label": "Pricing Unit",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionQuantityUnit",
+          "type": "Edm.String",
+          "label": "Condition Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionQuantitySAPUnit",
+          "type": "Edm.String",
+          "label": "SAP Condition Qty",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionQuantityISOUnit",
+          "type": "Edm.String",
+          "label": "ISO Condition Qty",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionCategory",
+          "type": "Edm.String",
+          "label": "Condition Category",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionIsForStatistics",
+          "type": "Edm.Boolean",
+          "label": "Statistical",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PricingScaleType",
+          "type": "Edm.String",
+          "label": "Scale Type",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IsRelevantForAccrual",
+          "type": "Edm.Boolean",
+          "label": "Accruals",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CndnIsRelevantForInvoiceList",
+          "type": "Edm.String",
+          "label": "Invoice List Cond.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionOrigin",
+          "type": "Edm.String",
+          "label": "Condition Origin",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IsGroupCondition",
+          "type": "Edm.String",
+          "label": "Group Condition",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionRecord",
+          "type": "Edm.String",
+          "label": "Condition Record No.",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "ConditionSequentialNumber",
+          "type": "Edm.String",
+          "label": "Sequent.No. of Cond.",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "TaxCode",
+          "type": "Edm.String",
+          "label": "Tax Code",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "WithholdingTaxCode",
+          "type": "Edm.String",
+          "label": "W/Tax Code",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "CndnRoundingOffDiffAmount",
+          "type": "Edm.Decimal",
+          "label": "Condition Rounding Difference",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionAmount",
+          "type": "Edm.Decimal",
+          "label": "Condition Value",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TransactionCurrency",
+          "type": "Edm.String",
+          "label": "Document Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "ConditionControl",
+          "type": "Edm.String",
+          "label": "Condition Control",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionInactiveReason",
+          "type": "Edm.String",
+          "label": "Inactive Condition",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ConditionClass",
+          "type": "Edm.String",
+          "label": "Condition Class",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PrcgProcedureCounterForHeader",
+          "type": "Edm.String",
+          "label": "Counter",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FactorForConditionBasisValue",
+          "type": "Edm.Double",
+          "label": "Condition Factor",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "StructureCondition",
+          "type": "Edm.String",
+          "label": "Structure Condition",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PeriodFactorForCndnBasisValue",
+          "type": "Edm.Double",
+          "label": "Condition Factor",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PricingScaleBasis",
+          "type": "Edm.String",
+          "label": "Scale Basis",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionScaleBasisValue",
+          "type": "Edm.Decimal",
+          "label": "Scale Base Val.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionScaleBasisUnit",
+          "type": "Edm.String",
+          "label": "Scale Unit of Meas.",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConditionScaleBasisCurrency",
+          "type": "Edm.String",
+          "label": "Scale Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "CndnIsRelevantForIntcoBilling",
+          "type": "Edm.Boolean",
+          "label": "Intercomp.Billing",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionIsManuallyChanged",
+          "type": "Edm.Boolean",
+          "label": "Changed Manually",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConditionIsForConfiguration",
+          "type": "Edm.Boolean",
+          "label": "UsedforVariantConfig",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "VariantCondition",
+          "type": "Edm.String",
+          "label": "Variant Key",
+          "nullable": true,
+          "max_length": 26
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_3BF40B19B8B1DF0736F165DBAFECEE42"
+        },
+        {
+          "name": "to_SalesOrderItem",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_0FC12A865A38C45D885A046A7BD1FA20"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderItemRelatedObject",
+      "entity_type": "A_SalesOrderItemRelatedObjectType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "SDDocRelatedObjectSequenceNmbr"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "SDDocRelatedObjectSequenceNmbr",
+          "type": "Edm.String",
+          "label": "Sequence Number",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "SDDocumentRelatedObjectType",
+          "type": "Edm.String",
+          "label": "Related Object Type",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "SDDocRelatedObjectSystem",
+          "type": "Edm.String",
+          "label": "System of Reltd Obj.",
+          "nullable": true,
+          "max_length": 60
+        },
+        {
+          "name": "SDDocRelatedObjectReference1",
+          "type": "Edm.String",
+          "label": "Reltd Obj. Reference",
+          "nullable": true,
+          "max_length": 60
+        },
+        {
+          "name": "SDDocRelatedObjectReference2",
+          "type": "Edm.String",
+          "label": "Reltd Obj. Reference",
+          "nullable": true,
+          "max_length": 60
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_6B42366FDD8A33A8767F773550E220BE"
+        },
+        {
+          "name": "to_SalesOrderItem",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_23263FF545593921DCBE6AD22FEA01CC"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderItemText",
+      "entity_type": "A_SalesOrderItemTextType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "Language",
+        "LongTextID"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "Language",
+          "type": "Edm.String",
+          "label": "Language Key",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "LongTextID",
+          "type": "Edm.String",
+          "label": "Text ID",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "LongText",
+          "type": "Edm.String",
+          "label": "String",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_802E52C3F27DB910494E51738146B8F5"
+        },
+        {
+          "name": "to_SalesOrderItem",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_CAC77A6CEA49335D6F6A2CC8AC8469E0"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderItmPrecdgProcFlow",
+      "entity_type": "A_SalesOrderItmPrecdgProcFlowType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "DocRelationshipUUID"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Subsequent Document",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Subsequent Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "DocRelationshipUUID",
+          "type": "Edm.Guid",
+          "label": "DocRelationshipUUID",
+          "nullable": false,
+          "max_length": null
+        },
+        {
+          "name": "PrecedingDocument",
+          "type": "Edm.String",
+          "label": "Preceding Document",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "PrecedingDocumentItem",
+          "type": "Edm.String",
+          "label": "Preceding Item",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "PrecedingDocumentCategory",
+          "type": "Edm.String",
+          "label": "Preceding Doc.Categ.",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProcessFlowLevel",
+          "type": "Edm.String",
+          "label": "Level",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "RelatedProcFlowDocStsFieldName",
+          "type": "Edm.String",
+          "label": "Field Name",
+          "nullable": true,
+          "max_length": 30
+        },
+        {
+          "name": "SDProcessStatus",
+          "type": "Edm.String",
+          "label": "Overall Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "AccountingTransferStatus",
+          "type": "Edm.String",
+          "label": "Posting Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PrelimBillingDocumentStatus",
+          "type": "Edm.String",
+          "label": "Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CreationDate",
+          "type": "Edm.DateTime",
+          "label": "Created On",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CreationTime",
+          "type": "Edm.Time",
+          "label": "Time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LastChangeDate",
+          "type": "Edm.DateTime",
+          "label": "Changed On",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_CC32E2C6F0FB090869CA604F96680CB2"
+        },
+        {
+          "name": "to_SalesOrderItem",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_F84E347367BD7D75E7E9DDFA232872EF"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderItmSubsqntProcFlow",
+      "entity_type": "A_SalesOrderItmSubsqntProcFlowType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "DocRelationshipUUID"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Preceding Document",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Preceding Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "DocRelationshipUUID",
+          "type": "Edm.Guid",
+          "label": "DocRelationshipUUID",
+          "nullable": false,
+          "max_length": null
+        },
+        {
+          "name": "SubsequentDocument",
+          "type": "Edm.String",
+          "label": "Subsequent Document",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "SubsequentDocumentItem",
+          "type": "Edm.String",
+          "label": "Subsequent Item",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "SubsequentDocumentCategory",
+          "type": "Edm.String",
+          "label": "Subsequent Doc. Cat.",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProcessFlowLevel",
+          "type": "Edm.String",
+          "label": "Level",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "RelatedProcFlowDocStsFieldName",
+          "type": "Edm.String",
+          "label": "Field Name",
+          "nullable": true,
+          "max_length": 30
+        },
+        {
+          "name": "SDProcessStatus",
+          "type": "Edm.String",
+          "label": "Overall Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "AccountingTransferStatus",
+          "type": "Edm.String",
+          "label": "Posting Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PrelimBillingDocumentStatus",
+          "type": "Edm.String",
+          "label": "Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "SubsqntDocItmPrecdgDocument",
+          "type": "Edm.String",
+          "label": "Preceding Document",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "SubsqntDocItmPrecdgDocItem",
+          "type": "Edm.String",
+          "label": "Preceding Item",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "SubsqntDocItmPrecdgDocCategory",
+          "type": "Edm.String",
+          "label": "Preceding Doc.Categ.",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "CreationDate",
+          "type": "Edm.DateTime",
+          "label": "Created On",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CreationTime",
+          "type": "Edm.Time",
+          "label": "Time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LastChangeDate",
+          "type": "Edm.DateTime",
+          "label": "Changed On",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_FA33DA20D7C77462A4BA2175C49FFC58"
+        },
+        {
+          "name": "to_SalesOrderItem",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_3B272DA357E568E4A7FBB97F5FEFE6E1"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderPartnerAddress",
+      "entity_type": "A_SalesOrderPartnerAddressType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "PartnerFunction",
+        "AddressRepresentationCode"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "SD Document",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "PartnerFunction",
+          "type": "Edm.String",
+          "label": "Partner Function",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "AddressRepresentationCode",
+          "type": "Edm.String",
+          "label": "Address Version",
+          "nullable": false,
+          "max_length": 1
+        },
+        {
+          "name": "CorrespondenceLanguage",
+          "type": "Edm.String",
+          "label": "Language Key",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "AddresseeFullName",
+          "type": "Edm.String",
+          "label": "Full Name",
+          "nullable": true,
+          "max_length": 80
+        },
+        {
+          "name": "OrganizationName1",
+          "type": "Edm.String",
+          "label": "Name",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "OrganizationName2",
+          "type": "Edm.String",
+          "label": "Name 2",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "OrganizationName3",
+          "type": "Edm.String",
+          "label": "Name 3",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "OrganizationName4",
+          "type": "Edm.String",
+          "label": "Name 4",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "CityName",
+          "type": "Edm.String",
+          "label": "City",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "DistrictName",
+          "type": "Edm.String",
+          "label": "District",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "PostalCode",
+          "type": "Edm.String",
+          "label": "Postal Code",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "StreetPrefixName1",
+          "type": "Edm.String",
+          "label": "Street Address Non-Deliverable Reason",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "StreetPrefixName2",
+          "type": "Edm.String",
+          "label": "Street 3",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "StreetName",
+          "type": "Edm.String",
+          "label": "Street",
+          "nullable": true,
+          "max_length": 60
+        },
+        {
+          "name": "StreetSuffixName1",
+          "type": "Edm.String",
+          "label": "Street 4",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "StreetSuffixName2",
+          "type": "Edm.String",
+          "label": "Street 5",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "HouseNumber",
+          "type": "Edm.String",
+          "label": "House Number",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "Country",
+          "type": "Edm.String",
+          "label": "Country/Region Key",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "Region",
+          "type": "Edm.String",
+          "label": "Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FormOfAddress",
+          "type": "Edm.String",
+          "label": "Title Key",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "TaxJurisdiction",
+          "type": "Edm.String",
+          "label": "Tax Jurisdiction",
+          "nullable": true,
+          "max_length": 15
+        },
+        {
+          "name": "TransportZone",
+          "type": "Edm.String",
+          "label": "Transportation Zone",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "POBox",
+          "type": "Edm.String",
+          "label": "PO Box",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "POBoxPostalCode",
+          "type": "Edm.String",
+          "label": "PO Box Postal Code",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "EmailAddress",
+          "type": "Edm.String",
+          "label": "Email Address",
+          "nullable": true,
+          "max_length": 241
+        },
+        {
+          "name": "MobilePhoneCountry",
+          "type": "Edm.String",
+          "label": "Country/Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "MobileNumber",
+          "type": "Edm.String",
+          "label": "Telephone",
+          "nullable": true,
+          "max_length": 30
+        },
+        {
+          "name": "PhoneNumberCountry",
+          "type": "Edm.String",
+          "label": "Country/Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "PhoneNumber",
+          "type": "Edm.String",
+          "label": "Telephone",
+          "nullable": true,
+          "max_length": 30
+        },
+        {
+          "name": "PhoneExtensionNumber",
+          "type": "Edm.String",
+          "label": "Extension",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "FaxNumberCountry",
+          "type": "Edm.String",
+          "label": "Country/Region",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FaxAreaCodeSubscriberNumber",
+          "type": "Edm.String",
+          "label": "Fax",
+          "nullable": true,
+          "max_length": 30
+        },
+        {
+          "name": "FaxExtensionNumber",
+          "type": "Edm.String",
+          "label": "Extension",
+          "nullable": true,
+          "max_length": 10
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_Partner",
+          "target_entity_set": "A_SalesOrderHeaderPartner",
+          "target_entity_type": "A_SalesOrderHeaderPartnerType",
+          "relationship": "assoc_446BD0EE9206FF025014D8082CEBE294"
+        },
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_33306300CC67F39A8B27081F2CC4CAE8"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderPrecdgProcFlow",
+      "entity_type": "A_SalesOrderPrecdgProcFlowType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "DocRelationshipUUID"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Subsequent Document",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "DocRelationshipUUID",
+          "type": "Edm.Guid",
+          "label": "DocRelationshipUUID",
+          "nullable": false,
+          "max_length": null
+        },
+        {
+          "name": "PrecedingDocument",
+          "type": "Edm.String",
+          "label": "Preceding Document",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "PrecedingDocumentCategory",
+          "type": "Edm.String",
+          "label": "Preceding Doc.Categ.",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProcessFlowLevel",
+          "type": "Edm.String",
+          "label": "Level",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "OverallSDProcessStatus",
+          "type": "Edm.String",
+          "label": "Overall Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CreationDate",
+          "type": "Edm.DateTime",
+          "label": "Created On",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CreationTime",
+          "type": "Edm.Time",
+          "label": "Time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LastChangeDate",
+          "type": "Edm.DateTime",
+          "label": "Changed On",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_E0F5C4FF6A58750660A9F0F93F0DCF0A"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderRelatedObject",
+      "entity_type": "A_SalesOrderRelatedObjectType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SDDocRelatedObjectSequenceNmbr"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SDDocRelatedObjectSequenceNmbr",
+          "type": "Edm.String",
+          "label": "Sequence Number",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "SDDocumentRelatedObjectType",
+          "type": "Edm.String",
+          "label": "Related Object Type",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "SDDocRelatedObjectSystem",
+          "type": "Edm.String",
+          "label": "System of Reltd Obj.",
+          "nullable": true,
+          "max_length": 60
+        },
+        {
+          "name": "SDDocRelatedObjectReference1",
+          "type": "Edm.String",
+          "label": "Reltd Obj. Reference",
+          "nullable": true,
+          "max_length": 60
+        },
+        {
+          "name": "SDDocRelatedObjectReference2",
+          "type": "Edm.String",
+          "label": "Reltd Obj. Reference",
+          "nullable": true,
+          "max_length": 60
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_3CE50E9F7A5F3D99541729901709C8AE"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderScheduleLine",
+      "entity_type": "A_SalesOrderScheduleLineType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "ScheduleLine"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "ScheduleLine",
+          "type": "Edm.String",
+          "label": "Schedule Line Number",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "RequestedDeliveryDate",
+          "type": "Edm.DateTime",
+          "label": "Requested Delivery Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConfirmedDeliveryDate",
+          "type": "Edm.DateTime",
+          "label": "Confirmed Delivery Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "OrderQuantityUnit",
+          "type": "Edm.String",
+          "label": "Sales Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "OrderQuantitySAPUnit",
+          "type": "Edm.String",
+          "label": "SAP Order Quantity",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "OrderQuantityISOUnit",
+          "type": "Edm.String",
+          "label": "ISO Order Quantity",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ScheduleLineOrderQuantity",
+          "type": "Edm.Decimal",
+          "label": "Order Quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConfdOrderQtyByMatlAvailCheck",
+          "type": "Edm.Decimal",
+          "label": "Confirmed Quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "DeliveredQtyInOrderQtyUnit",
+          "type": "Edm.Decimal",
+          "label": "Delivered Quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "OpenConfdDelivQtyInOrdQtyUnit",
+          "type": "Edm.Decimal",
+          "label": "Open Quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CorrectedQtyInOrderQtyUnit",
+          "type": "Edm.Decimal",
+          "label": "Rounded Quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "DelivBlockReasonForSchedLine",
+          "type": "Edm.String",
+          "label": "Delivery Block",
+          "nullable": true,
+          "max_length": 2
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_SalesOrderSubsqntProcFlow",
+      "entity_type": "A_SalesOrderSubsqntProcFlowType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "DocRelationshipUUID"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Preceding Document",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "DocRelationshipUUID",
+          "type": "Edm.Guid",
+          "label": "DocRelationshipUUID",
+          "nullable": false,
+          "max_length": null
+        },
+        {
+          "name": "SubsequentDocument",
+          "type": "Edm.String",
+          "label": "Subsequent Document",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "SubsequentDocumentCategory",
+          "type": "Edm.String",
+          "label": "Subsequent Doc. Cat.",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProcessFlowLevel",
+          "type": "Edm.String",
+          "label": "Level",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "OverallSDProcessStatus",
+          "type": "Edm.String",
+          "label": "Overall Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CreationDate",
+          "type": "Edm.DateTime",
+          "label": "Created On",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CreationTime",
+          "type": "Edm.Time",
+          "label": "Time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LastChangeDate",
+          "type": "Edm.DateTime",
+          "label": "Changed On",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_6E4CA6294B6E151B642ADACF23F22118"
+        }
+      ]
+    },
+    {
+      "name": "A_SalesOrderText",
+      "entity_type": "A_SalesOrderTextType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "Language",
+        "LongTextID"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "Language",
+          "type": "Edm.String",
+          "label": "Language Key",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "LongTextID",
+          "type": "Edm.String",
+          "label": "Text ID",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "LongText",
+          "type": "Edm.String",
+          "label": "String",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_9211CD1FA0A3B03DDB30735294259743"
+        }
+      ]
+    },
+    {
+      "name": "A_SlsOrderItemBillingPlanItem",
+      "entity_type": "A_SlsOrderItemBillingPlanItemType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "SalesOrderItem",
+        "BillingPlan",
+        "BillingPlanItem"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "SalesOrderItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "BillingPlan",
+          "type": "Edm.String",
+          "label": "Bill. Plan No.",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "BillingPlanItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "BillingPlanDateCategory",
+          "type": "Edm.String",
+          "label": "Date Category",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "BillingPlanBillingDate",
+          "type": "Edm.DateTime",
+          "label": "Billing Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanAmount",
+          "type": "Edm.Decimal",
+          "label": "Billing Value",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TransactionCurrency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "BillingPlanAmountPercent",
+          "type": "Edm.Decimal",
+          "label": "Invoice Percentage",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CustomerPaymentTerms",
+          "type": "Edm.String",
+          "label": "Terms of Payment",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProposedBillingDocumentType",
+          "type": "Edm.String",
+          "label": "Billing Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "BillingPlanDateDescriptionCode",
+          "type": "Edm.String",
+          "label": "Date Description",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "BillingBlockReason",
+          "type": "Edm.String",
+          "label": "Billing Block",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "BillingPlanServiceStartDate",
+          "type": "Edm.DateTime",
+          "label": "Settlement Start Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanServiceEndDate",
+          "type": "Edm.DateTime",
+          "label": "Settlement End Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BillingPlanRelatedBillgStatus",
+          "type": "Edm.String",
+          "label": "Billing Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BillingPlanType",
+          "type": "Edm.String",
+          "label": "Billing Plan Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "AdoptingBillingDateID",
+          "type": "Edm.String",
+          "label": "Fixed Date",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BillingPlanBillingRule",
+          "type": "Edm.String",
+          "label": "Billing Rule",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BillingPlanMilestoneUsage",
+          "type": "Edm.String",
+          "label": "Usage",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "BillgPlnDteCorrectionRfndType",
+          "type": "Edm.String",
+          "label": "Correction Date",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "AccountingExchangeRate",
+          "type": "Edm.Decimal",
+          "label": "Accounting Exchange Rate",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PostponementReason",
+          "type": "Edm.String",
+          "label": "Reason",
+          "nullable": true,
+          "max_length": 255
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_BillingPlan",
+          "target_entity_set": "A_SalesOrderItemBillingPlan",
+          "target_entity_type": "A_SalesOrderItemBillingPlanType",
+          "relationship": "assoc_3D08828137EE010DB9B006F0178DB30D"
+        },
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_1EA30871138795AF6C0FEE0758E995CC"
+        },
+        {
+          "name": "to_SalesOrderItem",
+          "target_entity_set": "A_SalesOrderItem",
+          "target_entity_type": "A_SalesOrderItemType",
+          "relationship": "assoc_2C967C7759CB94A66DC054E68B50E26F"
+        }
+      ]
+    },
+    {
+      "name": "A_SlsOrdPaymentPlanItemDetails",
+      "entity_type": "A_SlsOrdPaymentPlanItemDetailsType",
+      "label": null,
+      "keys": [
+        "SalesOrder",
+        "PaymentPlanItem"
+      ],
+      "properties": [
+        {
+          "name": "SalesOrder",
+          "type": "Edm.String",
+          "label": "Sales Order",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "PaymentPlanItem",
+          "type": "Edm.String",
+          "label": "Item",
+          "nullable": false,
+          "max_length": 6
+        },
+        {
+          "name": "PaymentPlan",
+          "type": "Edm.String",
+          "label": "Bill. Plan No.",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "ElectronicPaymentType",
+          "type": "Edm.String",
+          "label": "EPayt Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ElectronicPayment",
+          "type": "Edm.String",
+          "label": "Account Number",
+          "nullable": true,
+          "max_length": 25
+        },
+        {
+          "name": "EPaytValidityStartDate",
+          "type": "Edm.DateTime",
+          "label": "EPayt Valid from",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "EPaytValidityEndDate",
+          "type": "Edm.DateTime",
+          "label": "EPayt Valid to",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ElectronicPaymentHolderName",
+          "type": "Edm.String",
+          "label": "Account Holder",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "AuthorizedAmountInAuthznCrcy",
+          "type": "Edm.Decimal",
+          "label": "Authorized Amount",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "AuthorizationCurrency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "AuthorizationByDigitalPaytSrvc",
+          "type": "Edm.String",
+          "label": "Auth. Number",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "AuthorizationByAcquirer",
+          "type": "Edm.String",
+          "label": "Auth. Ref. Code",
+          "nullable": true,
+          "max_length": 15
+        },
+        {
+          "name": "AuthorizationDate",
+          "type": "Edm.DateTime",
+          "label": "EPayt Auth. Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "AuthorizationTime",
+          "type": "Edm.Time",
+          "label": "EPayt Auth. Time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "AuthorizationStatusName",
+          "type": "Edm.String",
+          "label": "Text",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "EPaytByDigitalPaymentSrvc",
+          "type": "Edm.String",
+          "label": "EPayt Token",
+          "nullable": true,
+          "max_length": 25
+        },
+        {
+          "name": "ElectronicPaymentCallStatus",
+          "type": "Edm.String",
+          "label": "Call Status",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "EPaytAuthorizationResult",
+          "type": "Edm.String",
+          "label": "Rsp to Auth. Check",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "EPaytToBeAuthorizedAmount",
+          "type": "Edm.Decimal",
+          "label": "Amt to Be Auth.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "EPaytAuthorizationIsExpired",
+          "type": "Edm.Boolean",
+          "label": "Auth. Expired",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "EPaytAmountIsChanged",
+          "type": "Edm.Boolean",
+          "label": "Amount Changed",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PreauthorizationIsRequested",
+          "type": "Edm.Boolean",
+          "label": "Preauthorization",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PaymentServiceProvider",
+          "type": "Edm.String",
+          "label": "Paymnt Serv. Provid.",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "PaymentByPaymentServicePrvdr",
+          "type": "Edm.String",
+          "label": "Payment Identifier",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "TransactionByPaytSrvcPrvdr",
+          "type": "Edm.String",
+          "label": "PSP Transaction ID",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "MerchantByClearingHouse",
+          "type": "Edm.String",
+          "label": "Merchant ID",
+          "nullable": true,
+          "max_length": 15
+        },
+        {
+          "name": "PaymentCardAuthznRelationID",
+          "type": "Edm.String",
+          "label": "Auth. Rel. ID",
+          "nullable": true,
+          "max_length": 44
+        },
+        {
+          "name": "MaximumToBeAuthorizedAmount",
+          "type": "Edm.Decimal",
+          "label": "Billing Value",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PaytPlnForAuthorizationItem",
+          "type": "Edm.String",
+          "label": "Higher-level plan",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "PaytPlnItmForAuthorizationItem",
+          "type": "Edm.String",
+          "label": "Higher-level item",
+          "nullable": true,
+          "max_length": 6
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesOrder",
+          "target_entity_set": "A_SalesOrder",
+          "target_entity_type": "A_SalesOrderType",
+          "relationship": "assoc_11F73D17E966CAF8365A0A85432C45F3"
+        }
+      ]
+    }
+  ]
+}

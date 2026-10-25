@@ -1,0 +1,4082 @@
+{
+  "service": "API_PRODUCT_SRV",
+  "entity_sets": [
+    {
+      "name": "A_Product",
+      "entity_type": "A_ProductType",
+      "label": null,
+      "keys": [
+        "Product"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "ProductType",
+          "type": "Edm.String",
+          "label": "Product Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "CrossPlantStatus",
+          "type": "Edm.String",
+          "label": "CrossPlantProdStatus",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "CrossPlantStatusValidityDate",
+          "type": "Edm.DateTime",
+          "label": "Valid from",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CreationDate",
+          "type": "Edm.DateTime",
+          "label": "Created On",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CreatedByUser",
+          "type": "Edm.String",
+          "label": "Created By",
+          "nullable": true,
+          "max_length": 12
+        },
+        {
+          "name": "LastChangeDate",
+          "type": "Edm.DateTime",
+          "label": "Last Change",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LastChangedByUser",
+          "type": "Edm.String",
+          "label": "Changed By",
+          "nullable": true,
+          "max_length": 12
+        },
+        {
+          "name": "LastChangeDateTime",
+          "type": "Edm.DateTimeOffset",
+          "label": "Last Changed",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsMarkedForDeletion",
+          "type": "Edm.Boolean",
+          "label": "Marked for Deletion",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductOldID",
+          "type": "Edm.String",
+          "label": "Old Product Number",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "GrossWeight",
+          "type": "Edm.Decimal",
+          "label": "Gross Weight",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PurchaseOrderQuantityUnit",
+          "type": "Edm.String",
+          "label": "Order Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "SourceOfSupply",
+          "type": "Edm.String",
+          "label": "Source of supply",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "WeightUnit",
+          "type": "Edm.String",
+          "label": "Unit of Weight",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "NetWeight",
+          "type": "Edm.Decimal",
+          "label": "Net Weight",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CountryOfOrigin",
+          "type": "Edm.String",
+          "label": "Cntry/Reg of Origin",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "CompetitorID",
+          "type": "Edm.String",
+          "label": "Competitor",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "ProductGroup",
+          "type": "Edm.String",
+          "label": "Product Group",
+          "nullable": true,
+          "max_length": 9
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ItemCategoryGroup",
+          "type": "Edm.String",
+          "label": "Gen. item cat. grp",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProductHierarchy",
+          "type": "Edm.String",
+          "label": "Product Hierarchy",
+          "nullable": true,
+          "max_length": 18
+        },
+        {
+          "name": "Division",
+          "type": "Edm.String",
+          "label": "Division",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "VarblPurOrdUnitIsActive",
+          "type": "Edm.String",
+          "label": "Var. Order Unit",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "VolumeUnit",
+          "type": "Edm.String",
+          "label": "Volume Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "MaterialVolume",
+          "type": "Edm.Decimal",
+          "label": "Volume",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ANPCode",
+          "type": "Edm.String",
+          "label": "ANP Code",
+          "nullable": true,
+          "max_length": 9
+        },
+        {
+          "name": "Brand",
+          "type": "Edm.String",
+          "label": "Brand",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProcurementRule",
+          "type": "Edm.String",
+          "label": "Procurement rule",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ValidityStartDate",
+          "type": "Edm.DateTime",
+          "label": "Valid From",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LowLevelCode",
+          "type": "Edm.String",
+          "label": "Low-Level Code",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ProdNoInGenProdInPrepackProd",
+          "type": "Edm.String",
+          "label": "Generic Material",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "SerialIdentifierAssgmtProfile",
+          "type": "Edm.String",
+          "label": "Serial No. Profile",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "SizeOrDimensionText",
+          "type": "Edm.String",
+          "label": "Size/dimensions",
+          "nullable": true,
+          "max_length": 32
+        },
+        {
+          "name": "IndustryStandardName",
+          "type": "Edm.String",
+          "label": "Industry Std Desc.",
+          "nullable": true,
+          "max_length": 18
+        },
+        {
+          "name": "ProductStandardID",
+          "type": "Edm.String",
+          "label": "GTIN",
+          "nullable": true,
+          "max_length": 18
+        },
+        {
+          "name": "InternationalArticleNumberCat",
+          "type": "Edm.String",
+          "label": "EAN Category",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ProductIsConfigurable",
+          "type": "Edm.Boolean",
+          "label": "Configurable",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsBatchManagementRequired",
+          "type": "Edm.Boolean",
+          "label": "Batch Management",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ExternalProductGroup",
+          "type": "Edm.String",
+          "label": "Ext. Product Group",
+          "nullable": true,
+          "max_length": 18
+        },
+        {
+          "name": "CrossPlantConfigurableProduct",
+          "type": "Edm.String",
+          "label": "Cross-plant CP",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "SerialNoExplicitnessLevel",
+          "type": "Edm.String",
+          "label": "Serialization Level",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductManufacturerNumber",
+          "type": "Edm.String",
+          "label": "Mfr. Part Number",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "ManufacturerNumber",
+          "type": "Edm.String",
+          "label": "Manufacturer",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "ManufacturerPartProfile",
+          "type": "Edm.String",
+          "label": "Mfr Part Profile",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "QltyMgmtInProcmtIsActive",
+          "type": "Edm.Boolean",
+          "label": "QM in Procur. Active",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IndustrySector",
+          "type": "Edm.String",
+          "label": "Industry",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ChangeNumber",
+          "type": "Edm.String",
+          "label": "Change Number",
+          "nullable": true,
+          "max_length": 12
+        },
+        {
+          "name": "MaterialRevisionLevel",
+          "type": "Edm.String",
+          "label": "Revision Level",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "HandlingIndicator",
+          "type": "Edm.String",
+          "label": "Handling Indicator",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "WarehouseProductGroup",
+          "type": "Edm.String",
+          "label": "WH Material Group",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "WarehouseStorageCondition",
+          "type": "Edm.String",
+          "label": "Whse Stor. Condition",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "StandardHandlingUnitType",
+          "type": "Edm.String",
+          "label": "Standard HU Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "SerialNumberProfile",
+          "type": "Edm.String",
+          "label": "Serial No. Profile",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "AdjustmentProfile",
+          "type": "Edm.String",
+          "label": "Adjust. Profile",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "PreferredUnitOfMeasure",
+          "type": "Edm.String",
+          "label": "Preferred UoM",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "IsPilferable",
+          "type": "Edm.Boolean",
+          "label": "Pilferable",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsRelevantForHzdsSubstances",
+          "type": "Edm.Boolean",
+          "label": "Relevant for HS",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "QuarantinePeriod",
+          "type": "Edm.Decimal",
+          "label": "Quarant. Per.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TimeUnitForQuarantinePeriod",
+          "type": "Edm.String",
+          "label": "Time Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "QualityInspectionGroup",
+          "type": "Edm.String",
+          "label": "Quality Inspec. Grp",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "AuthorizationGroup",
+          "type": "Edm.String",
+          "label": "Authorization Group",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "DocumentIsCreatedByCAD",
+          "type": "Edm.Boolean",
+          "label": "CAD Indicator",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "HandlingUnitType",
+          "type": "Edm.String",
+          "label": "Handling Unit Type",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "HasVariableTareWeight",
+          "type": "Edm.Boolean",
+          "label": "Varb. Tare Weight",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaximumPackagingLength",
+          "type": "Edm.Decimal",
+          "label": "Max. Pack. Length",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaximumPackagingWidth",
+          "type": "Edm.Decimal",
+          "label": "Max. Pack. Width",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaximumPackagingHeight",
+          "type": "Edm.Decimal",
+          "label": "Max. Pack. Height",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "UnitForMaxPackagingDimensions",
+          "type": "Edm.String",
+          "label": "Unit of Measurement",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "YY1_BonusValidityEnd_PRD",
+          "type": "Edm.DateTime",
+          "label": "Bonus Validity End",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "YY1_BonusPercentage_PRD",
+          "type": "Edm.Decimal",
+          "label": "Bonus Percentage",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "YY1_BonusPercentage_PRDU",
+          "type": "Edm.String",
+          "label": "Bonus Percentage (Unit)",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "YY1_BonusValidityStart_PRD",
+          "type": "Edm.DateTime",
+          "label": "Bonus Validity Start",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_Description",
+          "target_entity_set": "A_ProductDescription",
+          "target_entity_type": "A_ProductDescriptionType",
+          "relationship": "assoc_B3BC21CD74485D381C22EBC58AD5D2F4"
+        },
+        {
+          "name": "to_Plant",
+          "target_entity_set": "A_ProductPlant",
+          "target_entity_type": "A_ProductPlantType",
+          "relationship": "assoc_9E0A9389B585D61EBCFB6C47D388CE0D"
+        },
+        {
+          "name": "to_ProductBasicText",
+          "target_entity_set": "A_ProductBasicText",
+          "target_entity_type": "A_ProductBasicTextType",
+          "relationship": "assoc_95BC59F3A76287DCE46892F699049DE5"
+        },
+        {
+          "name": "to_ProductInspectionText",
+          "target_entity_set": "A_ProductInspectionText",
+          "target_entity_type": "A_ProductInspectionTextType",
+          "relationship": "assoc_EAC7043438B2C49F717CF69C59629117"
+        },
+        {
+          "name": "to_ProductProcurement",
+          "target_entity_set": "A_ProductProcurement",
+          "target_entity_type": "A_ProductProcurementType",
+          "relationship": "assoc_6AE246D6CFC2A74097B7EB170B53136D"
+        },
+        {
+          "name": "to_ProductPurchaseText",
+          "target_entity_set": "A_ProductPurchaseText",
+          "target_entity_type": "A_ProductPurchaseTextType",
+          "relationship": "assoc_D9918D8571D13F0C6356F5BADD6AEB60"
+        },
+        {
+          "name": "to_ProductQualityMgmt",
+          "target_entity_set": "A_ProductQualityMgmt",
+          "target_entity_type": "A_ProductQualityMgmtType",
+          "relationship": "assoc_04107F14F12D8F70A992681395EE6F49"
+        },
+        {
+          "name": "to_ProductSales",
+          "target_entity_set": "A_ProductSales",
+          "target_entity_type": "A_ProductSalesType",
+          "relationship": "assoc_C7A22C66B04FCF947EF10B0748679BF5"
+        },
+        {
+          "name": "to_ProductSalesTax",
+          "target_entity_set": "A_ProductSalesTax",
+          "target_entity_type": "A_ProductSalesTaxType",
+          "relationship": "assoc_0D511862D40D30AD11CA2FE43EBDB1DD"
+        },
+        {
+          "name": "to_ProductStorage",
+          "target_entity_set": "A_ProductStorage",
+          "target_entity_type": "A_ProductStorageType",
+          "relationship": "assoc_CF0557B45173CAED737DEDAF99915A25"
+        },
+        {
+          "name": "to_ProductUnitsOfMeasure",
+          "target_entity_set": "A_ProductUnitsOfMeasure",
+          "target_entity_type": "A_ProductUnitsOfMeasureType",
+          "relationship": "assoc_11301C55735F70E685BC84D3ADBAFB38"
+        },
+        {
+          "name": "to_SalesDelivery",
+          "target_entity_set": "A_ProductSalesDelivery",
+          "target_entity_type": "A_ProductSalesDeliveryType",
+          "relationship": "assoc_4AFBA201432776E45B5D3FB9FF74534E"
+        },
+        {
+          "name": "to_Valuation",
+          "target_entity_set": "A_ProductValuation",
+          "target_entity_type": "A_ProductValuationType",
+          "relationship": "assoc_7797CB7E5794B791572D1AE65E5B456C"
+        }
+      ]
+    },
+    {
+      "name": "A_ProductBasicText",
+      "entity_type": "A_ProductBasicTextType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Language"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Language",
+          "type": "Edm.String",
+          "label": "Language Key",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "LongText",
+          "type": "Edm.String",
+          "label": "String",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductDescription",
+      "entity_type": "A_ProductDescriptionType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Language"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Language",
+          "type": "Edm.String",
+          "label": "Language Key",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "ProductDescription",
+          "type": "Edm.String",
+          "label": "Product Description",
+          "nullable": true,
+          "max_length": 40
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductInspectionText",
+      "entity_type": "A_ProductInspectionTextType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Language"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Language",
+          "type": "Edm.String",
+          "label": "Language Key",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "LongText",
+          "type": "Edm.String",
+          "label": "String",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductMLAccount",
+      "entity_type": "A_ProductMLAccountType",
+      "label": null,
+      "keys": [
+        "Product",
+        "ValuationArea",
+        "ValuationType",
+        "CurrencyRole"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "ValuationArea",
+          "type": "Edm.String",
+          "label": "Valuation Area",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "ValuationType",
+          "type": "Edm.String",
+          "label": "Valuation Type",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "CurrencyRole",
+          "type": "Edm.String",
+          "label": "Currency/Valuation",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "Currency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "ProductPriceControl",
+          "type": "Edm.String",
+          "label": "Price Control",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PriceUnitQty",
+          "type": "Edm.Decimal",
+          "label": "Price Unit",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MovingAveragePrice",
+          "type": "Edm.Decimal",
+          "label": "Per. Unit Price",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "StandardPrice",
+          "type": "Edm.Decimal",
+          "label": "Standard Price",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductMLPrices",
+      "entity_type": "A_ProductMLPricesType",
+      "label": null,
+      "keys": [
+        "Product",
+        "ValuationArea",
+        "ValuationType",
+        "CurrencyRole"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "ValuationArea",
+          "type": "Edm.String",
+          "label": "Valuation Area",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "ValuationType",
+          "type": "Edm.String",
+          "label": "Valuation Type",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "CurrencyRole",
+          "type": "Edm.String",
+          "label": "Currency/Valuation",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "Currency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "FuturePrice",
+          "type": "Edm.Decimal",
+          "label": "Future Price",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "FuturePriceValidityStartDate",
+          "type": "Edm.DateTime",
+          "label": "Valid From",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PlannedPrice",
+          "type": "Edm.Decimal",
+          "label": "Cost",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPlant",
+      "entity_type": "A_ProductPlantType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "PurchasingGroup",
+          "type": "Edm.String",
+          "label": "Purchasing Group",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "CountryOfOrigin",
+          "type": "Edm.String",
+          "label": "Cntry/Reg of Origin",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "RegionOfOrigin",
+          "type": "Edm.String",
+          "label": "Region of Origin",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ProductionInvtryManagedLoc",
+          "type": "Edm.String",
+          "label": "Storage Location",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProfileCode",
+          "type": "Edm.String",
+          "label": "Material Status",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ProfileValidityStartDate",
+          "type": "Edm.DateTime",
+          "label": "Valid From",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "AvailabilityCheckType",
+          "type": "Edm.String",
+          "label": "Availability check",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "FiscalYearVariant",
+          "type": "Edm.String",
+          "label": "Fiscal Year Variant",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "PeriodType",
+          "type": "Edm.String",
+          "label": "Period Indicator",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProfitCenter",
+          "type": "Edm.String",
+          "label": "Profit Center",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "Commodity",
+          "type": "Edm.String",
+          "label": "Commodity Code",
+          "nullable": true,
+          "max_length": 17
+        },
+        {
+          "name": "GoodsReceiptDuration",
+          "type": "Edm.Decimal",
+          "label": "GR processing time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaintenanceStatusName",
+          "type": "Edm.String",
+          "label": "Maintenance Status",
+          "nullable": true,
+          "max_length": 15
+        },
+        {
+          "name": "IsMarkedForDeletion",
+          "type": "Edm.Boolean",
+          "label": "DF at plant level",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MRPType",
+          "type": "Edm.String",
+          "label": "MRP Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "MRPResponsible",
+          "type": "Edm.String",
+          "label": "MRP Controller",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ABCIndicator",
+          "type": "Edm.String",
+          "label": "ABC Indicator",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "MinimumLotSizeQuantity",
+          "type": "Edm.Decimal",
+          "label": "Minimum Lot Size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaximumLotSizeQuantity",
+          "type": "Edm.Decimal",
+          "label": "Maximum Lot Size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "FixedLotSizeQuantity",
+          "type": "Edm.Decimal",
+          "label": "Fixed lot size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConsumptionTaxCtrlCode",
+          "type": "Edm.String",
+          "label": "Control Code",
+          "nullable": true,
+          "max_length": 16
+        },
+        {
+          "name": "IsCoProduct",
+          "type": "Edm.Boolean",
+          "label": "Co-Product",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductIsConfigurable",
+          "type": "Edm.String",
+          "label": "ConfigurableProduct",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "StockDeterminationGroup",
+          "type": "Edm.String",
+          "label": "Stock Determ. Group",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "StockInTransferQuantity",
+          "type": "Edm.Decimal",
+          "label": null,
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "StockInTransitQuantity",
+          "type": "Edm.Decimal",
+          "label": null,
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "HasPostToInspectionStock",
+          "type": "Edm.Boolean",
+          "label": "Post to insp. stock",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsBatchManagementRequired",
+          "type": "Edm.Boolean",
+          "label": "Batch Mgmt Rqt(Plnt)",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "SerialNumberProfile",
+          "type": "Edm.String",
+          "label": "Serial No. Profile",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "IsNegativeStockAllowed",
+          "type": "Edm.Boolean",
+          "label": "Neg. Stocks In Plant",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "GoodsReceiptBlockedStockQty",
+          "type": "Edm.Decimal",
+          "label": null,
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "HasConsignmentCtrl",
+          "type": "Edm.String",
+          "label": "Consign.Control",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "FiscalYearCurrentPeriod",
+          "type": "Edm.String",
+          "label": null,
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "FiscalMonthCurrentPeriod",
+          "type": "Edm.String",
+          "label": null,
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ProcurementType",
+          "type": "Edm.String",
+          "label": "Procurement Type",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IsInternalBatchManaged",
+          "type": "Edm.Boolean",
+          "label": "Batch Management",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductCFOPCategory",
+          "type": "Edm.String",
+          "label": "Matl. CFOP Category",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ProductIsExciseTaxRelevant",
+          "type": "Edm.Boolean",
+          "label": "Is Excise Tax Relevant",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConfigurableProduct",
+          "type": "Edm.String",
+          "label": "Conf. Material",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "GoodsIssueUnit",
+          "type": "Edm.String",
+          "label": "Unit of Issue",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "MaterialFreightGroup",
+          "type": "Edm.String",
+          "label": "Material Freight Grp",
+          "nullable": true,
+          "max_length": 8
+        },
+        {
+          "name": "OriginalBatchReferenceMaterial",
+          "type": "Edm.String",
+          "label": "OB Reference Materl",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "OriglBatchManagementIsRequired",
+          "type": "Edm.String",
+          "label": "OB Management",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductIsCriticalPrt",
+          "type": "Edm.Boolean",
+          "label": "Critical Part",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductLogisticsHandlingGroup",
+          "type": "Edm.String",
+          "label": "Log. handling group",
+          "nullable": true,
+          "max_length": 4
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_PlantMRPArea",
+          "target_entity_set": "A_ProductPlantMRPArea",
+          "target_entity_type": "A_ProductPlantMRPAreaType",
+          "relationship": "assoc_ECA1D301FB87C8D7F6522E3EDBB477E1"
+        },
+        {
+          "name": "to_PlantQualityMgmt",
+          "target_entity_set": "A_ProductPlantQualityMgmt",
+          "target_entity_type": "A_ProductPlantQualityMgmtType",
+          "relationship": "assoc_240CBF3A43C3225C3474E7837DF1FB9E"
+        },
+        {
+          "name": "to_PlantSales",
+          "target_entity_set": "A_ProductPlantSales",
+          "target_entity_type": "A_ProductPlantSalesType",
+          "relationship": "assoc_361F8A7D93C1F168E5F7C40F4B76DA04"
+        },
+        {
+          "name": "to_PlantStorage",
+          "target_entity_set": "A_ProductPlantStorage",
+          "target_entity_type": "A_ProductPlantStorageType",
+          "relationship": "assoc_6853A0F5C3C9777C7D0281F7E27ADFE3"
+        },
+        {
+          "name": "to_PlantText",
+          "target_entity_set": "A_ProductPlantText",
+          "target_entity_type": "A_ProductPlantTextType",
+          "relationship": "assoc_D03406C3840E9EE4F005C5DCD66C6F70"
+        },
+        {
+          "name": "to_ProdPlantInternationalTrade",
+          "target_entity_set": "A_ProductPlantIntlTrd",
+          "target_entity_type": "A_ProductPlantIntlTrdType",
+          "relationship": "assoc_B0D25529FCD47B864A996FE3524ABCAB"
+        },
+        {
+          "name": "to_ProductPlantCosting",
+          "target_entity_set": "A_ProductPlantCosting",
+          "target_entity_type": "A_ProductPlantCostingType",
+          "relationship": "assoc_5243A2287716930AB88619CC393A0270"
+        },
+        {
+          "name": "to_ProductPlantForecast",
+          "target_entity_set": "A_ProductPlantForecasting",
+          "target_entity_type": "A_ProductPlantForecastingType",
+          "relationship": "assoc_08B94F8EBE30FDF7EB60D4AA62322FE2"
+        },
+        {
+          "name": "to_ProductPlantProcurement",
+          "target_entity_set": "A_ProductPlantProcurement",
+          "target_entity_type": "A_ProductPlantProcurementType",
+          "relationship": "assoc_9274C979B07494EBCB8E0808D9700296"
+        },
+        {
+          "name": "to_ProductSupplyPlanning",
+          "target_entity_set": "A_ProductSupplyPlanning",
+          "target_entity_type": "A_ProductSupplyPlanningType",
+          "relationship": "assoc_37B6E41FD6FC7A73D5DB2781EB14C375"
+        },
+        {
+          "name": "to_ProductWorkScheduling",
+          "target_entity_set": "A_ProductWorkScheduling",
+          "target_entity_type": "A_ProductWorkSchedulingType",
+          "relationship": "assoc_33EC6BC1B293754B4214365F5AEB0DC1"
+        },
+        {
+          "name": "to_StorageLocation",
+          "target_entity_set": "A_ProductStorageLocation",
+          "target_entity_type": "A_ProductStorageLocationType",
+          "relationship": "assoc_2754A00DBA9C146B098B85A076E625EE"
+        }
+      ]
+    },
+    {
+      "name": "A_ProductPlantCosting",
+      "entity_type": "A_ProductPlantCostingType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "IsCoProduct",
+          "type": "Edm.Boolean",
+          "label": "Co-Product",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CostingLotSize",
+          "type": "Edm.Decimal",
+          "label": "Costing Lot Size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "VarianceKey",
+          "type": "Edm.String",
+          "label": "Variance Key",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "TaskListGroupCounter",
+          "type": "Edm.String",
+          "label": "Group Counter",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "TaskListGroup",
+          "type": "Edm.String",
+          "label": "Group",
+          "nullable": true,
+          "max_length": 8
+        },
+        {
+          "name": "TaskListType",
+          "type": "Edm.String",
+          "label": "Task List Type",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CostingProductionVersion",
+          "type": "Edm.String",
+          "label": "Production Version",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "IsFixedPriceCoProduct",
+          "type": "Edm.Boolean",
+          "label": "Fixed-Price Co-Prod.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CostingSpecialProcurementType",
+          "type": "Edm.String",
+          "label": "Special Procurement Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "SourceBOMAlternative",
+          "type": "Edm.String",
+          "label": "Alternative BOM",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ProductBOMUsage",
+          "type": "Edm.String",
+          "label": "BOM Usage",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductIsCostingRelevant",
+          "type": "Edm.Boolean",
+          "label": "Do Not Cost",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPlantForecasting",
+      "entity_type": "A_ProductPlantForecastingType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "ConsumptionRefUsageEndDate",
+          "type": "Edm.DateTime",
+          "label": "Date to",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConsumptionQtyMultiplier",
+          "type": "Edm.Decimal",
+          "label": "Multiplier",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ConsumptionReferenceProduct",
+          "type": "Edm.String",
+          "label": "RefMatl: consumption",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "ConsumptionReferencePlant",
+          "type": "Edm.String",
+          "label": "RefPlant:consumption",
+          "nullable": true,
+          "max_length": 4
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPlantIntlTrd",
+      "entity_type": "A_ProductPlantIntlTrdType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "CountryOfOrigin",
+          "type": "Edm.String",
+          "label": "Country/Region of Origin",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "RegionOfOrigin",
+          "type": "Edm.String",
+          "label": "Region of Origin",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ConsumptionTaxCtrlCode",
+          "type": "Edm.String",
+          "label": "Control Code",
+          "nullable": true,
+          "max_length": 16
+        },
+        {
+          "name": "ProductCASNumber",
+          "type": "Edm.String",
+          "label": "CAS number (pharm.)",
+          "nullable": true,
+          "max_length": 15
+        },
+        {
+          "name": "ProdIntlTradeClassification",
+          "type": "Edm.String",
+          "label": "PRODCOM no.",
+          "nullable": true,
+          "max_length": 9
+        },
+        {
+          "name": "ExportAndImportProductGroup",
+          "type": "Edm.String",
+          "label": "Intrastat Group",
+          "nullable": true,
+          "max_length": 4
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPlantMRPArea",
+      "entity_type": "A_ProductPlantMRPAreaType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant",
+        "MRPArea"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "MRP Area Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "MRPArea",
+          "type": "Edm.String",
+          "label": "MRP Area",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "MRPType",
+          "type": "Edm.String",
+          "label": "MRP Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "MRPResponsible",
+          "type": "Edm.String",
+          "label": "MRP Controller",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "MRPGroup",
+          "type": "Edm.String",
+          "label": "MRP Group",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ReorderThresholdQuantity",
+          "type": "Edm.Decimal",
+          "label": "Reorder Point",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PlanningTimeFence",
+          "type": "Edm.String",
+          "label": "Planning time fence",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "LotSizingProcedure",
+          "type": "Edm.String",
+          "label": "Lot Sizing Procedure",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "LotSizeRoundingQuantity",
+          "type": "Edm.Decimal",
+          "label": "Rounding value",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MinimumLotSizeQuantity",
+          "type": "Edm.Decimal",
+          "label": "Minimum Lot Size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaximumLotSizeQuantity",
+          "type": "Edm.Decimal",
+          "label": "Maximum Lot Size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaximumStockQuantity",
+          "type": "Edm.Decimal",
+          "label": "Maximum Stock Level",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "AssemblyScrapPercent",
+          "type": "Edm.Decimal",
+          "label": "Assembly scrap (%)",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProcurementSubType",
+          "type": "Edm.String",
+          "label": "Special Procurement",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "DfltStorageLocationExtProcmt",
+          "type": "Edm.String",
+          "label": "Storage Location",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "MRPPlanningCalendar",
+          "type": "Edm.String",
+          "label": "Planning Calendar",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "SafetyStockQuantity",
+          "type": "Edm.Decimal",
+          "label": "Safety Stock",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "RangeOfCvrgPrflCode",
+          "type": "Edm.String",
+          "label": "Coverage Profile",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "SafetyDuration",
+          "type": "Edm.String",
+          "label": "Safety Time",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "FixedLotSizeQuantity",
+          "type": "Edm.Decimal",
+          "label": "Fixed lot size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LotSizeIndependentCosts",
+          "type": "Edm.Decimal",
+          "label": "LS-Independent Costs",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsStorageCosts",
+          "type": "Edm.String",
+          "label": "Storage Costs Code",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "RqmtQtyRcptTaktTmeInWrkgDays",
+          "type": "Edm.Decimal",
+          "label": "Takt time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "SrvcLvl",
+          "type": "Edm.Decimal",
+          "label": "Service level (%)",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsMarkedForDeletion",
+          "type": "Edm.Boolean",
+          "label": "Deletion Indicator",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PerdPrflForSftyTme",
+          "type": "Edm.String",
+          "label": "Time Profile",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "IsMRPDependentRqmt",
+          "type": "Edm.String",
+          "label": "MRP Relevant",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IsSafetyTime",
+          "type": "Edm.String",
+          "label": "Safety Time Ind",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PlannedDeliveryDurationInDays",
+          "type": "Edm.Decimal",
+          "label": "Planned Deliv. Time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsPlannedDeliveryTime",
+          "type": "Edm.Boolean",
+          "label": "Consider PlDelTime",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "Currency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "PlanAndOrderDayDetermination",
+          "type": "Edm.String",
+          "label": "Planning Cycle",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "RoundingProfile",
+          "type": "Edm.String",
+          "label": "Rounding Profile",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "StorageLocation",
+          "type": "Edm.String",
+          "label": "Storage Location",
+          "nullable": true,
+          "max_length": 4
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPlantProcurement",
+      "entity_type": "A_ProductPlantProcurementType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "IsAutoPurOrdCreationAllowed",
+          "type": "Edm.Boolean",
+          "label": "Automatic PO",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsSourceListRequired",
+          "type": "Edm.Boolean",
+          "label": "Source list",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "SourceOfSupplyCategory",
+          "type": "Edm.String",
+          "label": "Source of supply",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ItmIsRlvtToJITDelivSchedules",
+          "type": "Edm.String",
+          "label": "JIT Delivery",
+          "nullable": true,
+          "max_length": 1
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPlantQualityMgmt",
+      "entity_type": "A_ProductPlantQualityMgmtType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "MaximumStoragePeriod",
+          "type": "Edm.Decimal",
+          "label": "Max. Storage Period",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "QualityMgmtCtrlKey",
+          "type": "Edm.String",
+          "label": "QM Control Key",
+          "nullable": true,
+          "max_length": 8
+        },
+        {
+          "name": "MatlQualityAuthorizationGroup",
+          "type": "Edm.String",
+          "label": "QM Material Auth.",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "HasPostToInspectionStock",
+          "type": "Edm.Boolean",
+          "label": "Post to insp. stock",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "InspLotDocumentationIsRequired",
+          "type": "Edm.Boolean",
+          "label": "Documentation reqd",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "SuplrQualityManagementSystem",
+          "type": "Edm.String",
+          "label": "Target QM System",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "RecrrgInspIntervalTimeInDays",
+          "type": "Edm.Decimal",
+          "label": "Inspection Interval",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductQualityCertificateType",
+          "type": "Edm.String",
+          "label": "Certificate Type",
+          "nullable": true,
+          "max_length": 4
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPlantSales",
+      "entity_type": "A_ProductPlantSalesType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "LoadingGroup",
+          "type": "Edm.String",
+          "label": "Loading Group",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ReplacementPartType",
+          "type": "Edm.String",
+          "label": "Replacement Part",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CapPlanningQuantityInBaseUoM",
+          "type": "Edm.Decimal",
+          "label": "Base quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductShippingProcessingTime",
+          "type": "Edm.Decimal",
+          "label": "Processing time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "WrkCentersShipgSetupTimeInDays",
+          "type": "Edm.Decimal",
+          "label": "Setup time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "AvailabilityCheckType",
+          "type": "Edm.String",
+          "label": "Availability check",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPlantStorage",
+      "entity_type": "A_ProductPlantStorageType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "InventoryForCycleCountInd",
+          "type": "Edm.String",
+          "label": "CC Phys. Inv. Ind.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProvisioningServiceLevel",
+          "type": "Edm.String",
+          "label": "Service Level",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CycleCountingIndicatorIsFixed",
+          "type": "Edm.Boolean",
+          "label": "CC indicator fixed",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProdMaximumStoragePeriodUnit",
+          "type": "Edm.String",
+          "label": "Time unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "WrhsMgmtPtwyAndStkRemovalStrgy",
+          "type": "Edm.String",
+          "label": "Putaway/StkRmvl",
+          "nullable": true,
+          "max_length": 1
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPlantText",
+      "entity_type": "A_ProductPlantTextType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "LongText",
+          "type": "Edm.String",
+          "label": "String",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductProcurement",
+      "entity_type": "A_ProductProcurementType",
+      "label": null,
+      "keys": [
+        "Product"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "PurchaseOrderQuantityUnit",
+          "type": "Edm.String",
+          "label": "Order Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "VarblPurOrdUnitStatus",
+          "type": "Edm.String",
+          "label": "Var. Order Unit",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PurchasingAcknProfile",
+          "type": "Edm.String",
+          "label": "Purchasing Value Key",
+          "nullable": true,
+          "max_length": 4
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductPurchaseText",
+      "entity_type": "A_ProductPurchaseTextType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Language"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Language",
+          "type": "Edm.String",
+          "label": "Language Key",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "LongText",
+          "type": "Edm.String",
+          "label": "String",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductQualityMgmt",
+      "entity_type": "A_ProductQualityMgmtType",
+      "label": null,
+      "keys": [
+        "Product"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "QltyMgmtInProcmtIsActive",
+          "type": "Edm.Boolean",
+          "label": "QM in Procur. Active",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductSales",
+      "entity_type": "A_ProductSalesType",
+      "label": null,
+      "keys": [
+        "Product"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "SalesStatus",
+          "type": "Edm.String",
+          "label": "X-DChain Status",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "SalesStatusValidityDate",
+          "type": "Edm.DateTime",
+          "label": "Cross-Distr. Chain Product Validity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TaxClassification",
+          "type": "Edm.String",
+          "label": "Tax Classification",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "TransportationGroup",
+          "type": "Edm.String",
+          "label": "Transportation Group",
+          "nullable": true,
+          "max_length": 4
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductSalesDelivery",
+      "entity_type": "A_ProductSalesDeliveryType",
+      "label": null,
+      "keys": [
+        "Product",
+        "ProductSalesOrg",
+        "ProductDistributionChnl"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "ProductSalesOrg",
+          "type": "Edm.String",
+          "label": "Sales Organization",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "ProductDistributionChnl",
+          "type": "Edm.String",
+          "label": "Distribution Channel",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "MinimumOrderQuantity",
+          "type": "Edm.Decimal",
+          "label": "Minimum order qty",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "SupplyingPlant",
+          "type": "Edm.String",
+          "label": "Delivering Plant",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "PriceSpecificationProductGroup",
+          "type": "Edm.String",
+          "label": "Product Price Group",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "AccountDetnProductGroup",
+          "type": "Edm.String",
+          "label": "Acct Assmt Grp Mat.",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "DeliveryNoteProcMinDelivQty",
+          "type": "Edm.Decimal",
+          "label": "Minimum Delivery Qty",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ItemCategoryGroup",
+          "type": "Edm.String",
+          "label": "Item Category Group",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "DeliveryQuantityUnit",
+          "type": "Edm.String",
+          "label": "Unit Of Measure",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "DeliveryQuantity",
+          "type": "Edm.Decimal",
+          "label": "Delivery unit",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductSalesStatus",
+          "type": "Edm.String",
+          "label": "DChain-spec. status",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ProductSalesStatusValidityDate",
+          "type": "Edm.DateTime",
+          "label": "Valid from",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "SalesMeasureUnit",
+          "type": "Edm.String",
+          "label": "Sales Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "IsMarkedForDeletion",
+          "type": "Edm.Boolean",
+          "label": "DF distr. chain lvl",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHierarchy",
+          "type": "Edm.String",
+          "label": "Product Hierarchy",
+          "nullable": true,
+          "max_length": 18
+        },
+        {
+          "name": "FirstSalesSpecProductGroup",
+          "type": "Edm.String",
+          "label": "Product Group 1",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "SecondSalesSpecProductGroup",
+          "type": "Edm.String",
+          "label": "Product Group 2",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ThirdSalesSpecProductGroup",
+          "type": "Edm.String",
+          "label": "Product Group 3",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FourthSalesSpecProductGroup",
+          "type": "Edm.String",
+          "label": "Product Group 4",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FifthSalesSpecProductGroup",
+          "type": "Edm.String",
+          "label": "Product Group 5",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "MinimumMakeToOrderOrderQty",
+          "type": "Edm.Decimal",
+          "label": "Min. MTO Quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "LogisticsStatisticsGroup",
+          "type": "Edm.String",
+          "label": "Material Stats Group",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "VolumeRebateGroup",
+          "type": "Edm.String",
+          "label": "Volume Rebate Group",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "ProductCommissionGroup",
+          "type": "Edm.String",
+          "label": "Commission Group",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "CashDiscountIsDeductible",
+          "type": "Edm.Boolean",
+          "label": "Cash Discount",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PricingReferenceProduct",
+          "type": "Edm.String",
+          "label": "Pricing Ref. Matl",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "RoundingProfile",
+          "type": "Edm.String",
+          "label": "Rounding Profile",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProductUnitGroup",
+          "type": "Edm.String",
+          "label": "Unit of Measure Grp",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "VariableSalesUnitIsNotAllowed",
+          "type": "Edm.Boolean",
+          "label": "Sales unit not var.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID01",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 1",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID02",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 2",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID03",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 3",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID04",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 4",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID05",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 5",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID06",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 6",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID07",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 7",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID08",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 8",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID09",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 9",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductHasAttributeID10",
+          "type": "Edm.Boolean",
+          "label": "Product Attribute 10",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_SalesTax",
+          "target_entity_set": "A_ProductSalesTax",
+          "target_entity_type": "A_ProductSalesTaxType",
+          "relationship": "assoc_8B475D0B25D26B6B6CA48A95CCEB900A"
+        },
+        {
+          "name": "to_SalesText",
+          "target_entity_set": "A_ProductSalesText",
+          "target_entity_type": "A_ProductSalesTextType",
+          "relationship": "assoc_1A27E9F9DA0803DF7DA211B51D68ABF0"
+        }
+      ]
+    },
+    {
+      "name": "A_ProductSalesTax",
+      "entity_type": "A_ProductSalesTaxType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Country",
+        "TaxCategory",
+        "TaxClassification"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Country",
+          "type": "Edm.String",
+          "label": "Departure Ctry/Reg.",
+          "nullable": false,
+          "max_length": 3
+        },
+        {
+          "name": "TaxCategory",
+          "type": "Edm.String",
+          "label": "Tax Condition Type",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "TaxClassification",
+          "type": "Edm.String",
+          "label": null,
+          "nullable": false,
+          "max_length": 1
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductSalesText",
+      "entity_type": "A_ProductSalesTextType",
+      "label": null,
+      "keys": [
+        "Product",
+        "ProductSalesOrg",
+        "ProductDistributionChnl",
+        "Language"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "ProductSalesOrg",
+          "type": "Edm.String",
+          "label": "Sales Organization",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "ProductDistributionChnl",
+          "type": "Edm.String",
+          "label": "Distribution Channel",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "Language",
+          "type": "Edm.String",
+          "label": "Language Key",
+          "nullable": false,
+          "max_length": 2
+        },
+        {
+          "name": "LongText",
+          "type": "Edm.String",
+          "label": "String",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductStorage",
+      "entity_type": "A_ProductStorageType",
+      "label": null,
+      "keys": [
+        "Product"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "StorageConditions",
+          "type": "Edm.String",
+          "label": "Storage conditions",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "TemperatureConditionInd",
+          "type": "Edm.String",
+          "label": "Temp. conditions",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "HazardousMaterialNumber",
+          "type": "Edm.String",
+          "label": "Haz. material number",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "NmbrOfGROrGISlipsToPrintQty",
+          "type": "Edm.Decimal",
+          "label": "GR slips quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LabelType",
+          "type": "Edm.String",
+          "label": "Label Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "LabelForm",
+          "type": "Edm.String",
+          "label": "Label Form",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "MinRemainingShelfLife",
+          "type": "Edm.Decimal",
+          "label": "Min. Rem. Shelf Life",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ExpirationDate",
+          "type": "Edm.String",
+          "label": "Expiration Date",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ShelfLifeExpirationDatePeriod",
+          "type": "Edm.String",
+          "label": "Period Ind. for SLED",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "TotalShelfLife",
+          "type": "Edm.Decimal",
+          "label": "Total Shelf Life",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductStorageLocation",
+      "entity_type": "A_ProductStorageLocationType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant",
+        "StorageLocation"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "StorageLocation",
+          "type": "Edm.String",
+          "label": "Storage Location",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "WarehouseStorageBin",
+          "type": "Edm.String",
+          "label": "Storage Bin",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "MaintenanceStatus",
+          "type": "Edm.String",
+          "label": "Maintenance Status",
+          "nullable": true,
+          "max_length": 15
+        },
+        {
+          "name": "PhysicalInventoryBlockInd",
+          "type": "Edm.String",
+          "label": "Phys. Inv. Block",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CreationDate",
+          "type": "Edm.DateTime",
+          "label": "Created On",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsMarkedForDeletion",
+          "type": "Edm.Boolean",
+          "label": "DF stor. loc. level",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "DateOfLastPostedCntUnRstrcdStk",
+          "type": "Edm.DateTime",
+          "label": "Date of Last Count",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "InventoryCorrectionFactor",
+          "type": "Edm.Double",
+          "label": "Invent. corr. factor",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "InvtryRestrictedUseStockInd",
+          "type": "Edm.String",
+          "label": "Restricted-use stock",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "InvtryCurrentYearStockInd",
+          "type": "Edm.String",
+          "label": "Warehouse stock CY",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "InvtryQualInspCurrentYrStkInd",
+          "type": "Edm.String",
+          "label": "Qual. insp. stock CY",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "InventoryBlockStockInd",
+          "type": "Edm.String",
+          "label": "Blocked stock",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "InvtryRestStockPrevPeriodInd",
+          "type": "Edm.String",
+          "label": "Restricted use, PP",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "InventoryStockPrevPeriod",
+          "type": "Edm.String",
+          "label": "Warehouse stock PY",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "InvtryStockQltyInspPrevPeriod",
+          "type": "Edm.String",
+          "label": "QualInspStock prv.pd",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "HasInvtryBlockStockPrevPeriod",
+          "type": "Edm.String",
+          "label": "Blcked stock prev.pd",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FiscalYearCurrentPeriod",
+          "type": "Edm.String",
+          "label": null,
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "FiscalMonthCurrentPeriod",
+          "type": "Edm.String",
+          "label": null,
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "FiscalYearCurrentInvtryPeriod",
+          "type": "Edm.String",
+          "label": "Fiscal year of current physical inventory indicator",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "LeanWrhsManagementPickingArea",
+          "type": "Edm.String",
+          "label": "Picking area",
+          "nullable": true,
+          "max_length": 3
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductSupplyPlanning",
+      "entity_type": "A_ProductSupplyPlanningType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "FixedLotSizeQuantity",
+          "type": "Edm.Decimal",
+          "label": "Fixed lot size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaximumLotSizeQuantity",
+          "type": "Edm.Decimal",
+          "label": "Maximum Lot Size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MinimumLotSizeQuantity",
+          "type": "Edm.Decimal",
+          "label": "Minimum Lot Size",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LotSizeRoundingQuantity",
+          "type": "Edm.Decimal",
+          "label": "Rounding value",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LotSizingProcedure",
+          "type": "Edm.String",
+          "label": "Lot Sizing Procedure",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "MRPType",
+          "type": "Edm.String",
+          "label": "MRP Type",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "MRPResponsible",
+          "type": "Edm.String",
+          "label": "MRP Controller",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "SafetyStockQuantity",
+          "type": "Edm.Decimal",
+          "label": "Safety Stock",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MinimumSafetyStockQuantity",
+          "type": "Edm.Decimal",
+          "label": "Min. Saf. Stock",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PlanningTimeFence",
+          "type": "Edm.String",
+          "label": "Planning time fence",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ABCIndicator",
+          "type": "Edm.String",
+          "label": "ABC Indicator",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "MaximumStockQuantity",
+          "type": "Edm.Decimal",
+          "label": "Maximum Stock Level",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ReorderThresholdQuantity",
+          "type": "Edm.Decimal",
+          "label": "Reorder Point",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PlannedDeliveryDurationInDays",
+          "type": "Edm.Decimal",
+          "label": "Planned Deliv. Time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "SafetyDuration",
+          "type": "Edm.String",
+          "label": "Safety Time",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "PlanningStrategyGroup",
+          "type": "Edm.String",
+          "label": "Strategy Group",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "TotalReplenishmentLeadTime",
+          "type": "Edm.Decimal",
+          "label": "Tot. repl. lead time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProcurementType",
+          "type": "Edm.String",
+          "label": "Procurement Type",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProcurementSubType",
+          "type": "Edm.String",
+          "label": "Special Procurement",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "AssemblyScrapPercent",
+          "type": "Edm.Decimal",
+          "label": "Assembly scrap (%)",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "AvailabilityCheckType",
+          "type": "Edm.String",
+          "label": "Availability check",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "GoodsReceiptDuration",
+          "type": "Edm.Decimal",
+          "label": "GR processing time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MRPGroup",
+          "type": "Edm.String",
+          "label": "MRP Group",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "DfltStorageLocationExtProcmt",
+          "type": "Edm.String",
+          "label": "Storage Location",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ProdRqmtsConsumptionMode",
+          "type": "Edm.String",
+          "label": "Consumption mode",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "BackwardCnsmpnPeriodInWorkDays",
+          "type": "Edm.String",
+          "label": "Backward Consumption Period",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "FwdConsumptionPeriodInWorkDays",
+          "type": "Edm.String",
+          "label": "Forward Consumption Period",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "PlanAndOrderDayDetermination",
+          "type": "Edm.String",
+          "label": "Planning Cycle",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "RoundingProfile",
+          "type": "Edm.String",
+          "label": "Rounding Profile",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "LotSizeIndependentCosts",
+          "type": "Edm.Decimal",
+          "label": "LS-Independent Costs",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MRPPlanningCalendar",
+          "type": "Edm.String",
+          "label": "Planning Calendar",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "RangeOfCvrgPrflCode",
+          "type": "Edm.String",
+          "label": "Coverage Profile",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "IsSafetyTime",
+          "type": "Edm.String",
+          "label": "Safety Time Ind",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "PerdPrflForSftyTme",
+          "type": "Edm.String",
+          "label": "Time Profile",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "IsMRPDependentRqmt",
+          "type": "Edm.String",
+          "label": "MRP Relevant",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "InHouseProductionTime",
+          "type": "Edm.Decimal",
+          "label": "In-house production",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductIsForCrossProject",
+          "type": "Edm.String",
+          "label": "Cross-Project",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "StorageCostsPercentageCode",
+          "type": "Edm.String",
+          "label": "Storage Costs Code",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "SrvcLvl",
+          "type": "Edm.Decimal",
+          "label": "Service level (%)",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MRPAvailabilityType",
+          "type": "Edm.String",
+          "label": "Mixed MRP",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "FollowUpProduct",
+          "type": "Edm.String",
+          "label": "Follow-Up Material",
+          "nullable": true,
+          "max_length": 40
+        },
+        {
+          "name": "RepetitiveManufacturingIsAllwd",
+          "type": "Edm.Boolean",
+          "label": "Repetitive Manufacturing Enabled",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "DependentRequirementsType",
+          "type": "Edm.String",
+          "label": "Indiv./ Coll.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IsBulkMaterialComponent",
+          "type": "Edm.Boolean",
+          "label": "Bulk Material",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "RepetitiveManufacturingProfile",
+          "type": "Edm.String",
+          "label": "Repetitive Manufacturing Profile",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "RqmtQtyRcptTaktTmeInWrkgDays",
+          "type": "Edm.Decimal",
+          "label": "Takt time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ForecastRequirementsAreSplit",
+          "type": "Edm.String",
+          "label": "Splitting Indicator",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "EffectiveOutDate",
+          "type": "Edm.DateTime",
+          "label": "Effective-Out Date",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MRPProfile",
+          "type": "Edm.String",
+          "label": "MRP profile",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ComponentScrapInPercent",
+          "type": "Edm.Decimal",
+          "label": "Component Scrap (%)",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductIsToBeDiscontinued",
+          "type": "Edm.String",
+          "label": "Discontinuation ind.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProdRqmtsAreConsolidated",
+          "type": "Edm.String",
+          "label": "Requirements group",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "MatlCompIsMarkedForBackflush",
+          "type": "Edm.String",
+          "label": "Backflush",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProposedProductSupplyArea",
+          "type": "Edm.String",
+          "label": "Proposed Supply Area",
+          "nullable": true,
+          "max_length": 10
+        },
+        {
+          "name": "Currency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "PlannedOrderActionControl",
+          "type": "Edm.String",
+          "label": "Action Control",
+          "nullable": true,
+          "max_length": 2
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductUnitsOfMeasure",
+      "entity_type": "A_ProductUnitsOfMeasureType",
+      "label": null,
+      "keys": [
+        "Product",
+        "AlternativeUnit"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "AlternativeUnit",
+          "type": "Edm.String",
+          "label": "AlternativeUnit",
+          "nullable": false,
+          "max_length": 3
+        },
+        {
+          "name": "QuantityNumerator",
+          "type": "Edm.Decimal",
+          "label": "Units / Quantity - Base Unit of Measure",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "QuantityDenominator",
+          "type": "Edm.Decimal",
+          "label": "Units / Quantity - Alt Unit of Measure",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaterialVolume",
+          "type": "Edm.Decimal",
+          "label": "Volume",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "VolumeUnit",
+          "type": "Edm.String",
+          "label": "Volume Unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "GrossWeight",
+          "type": "Edm.Decimal",
+          "label": "Gross Weight",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "WeightUnit",
+          "type": "Edm.String",
+          "label": "Unit of Weight",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "GlobalTradeItemNumber",
+          "type": "Edm.String",
+          "label": "EAN/UPC",
+          "nullable": true,
+          "max_length": 18
+        },
+        {
+          "name": "GlobalTradeItemNumberCategory",
+          "type": "Edm.String",
+          "label": "GTIN Category",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "UnitSpecificProductLength",
+          "type": "Edm.Decimal",
+          "label": "Length",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "UnitSpecificProductWidth",
+          "type": "Edm.Decimal",
+          "label": "Width",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "UnitSpecificProductHeight",
+          "type": "Edm.Decimal",
+          "label": "Height",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductMeasurementUnit",
+          "type": "Edm.String",
+          "label": "Unit of Dimension",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "LowerLevelPackagingUnit",
+          "type": "Edm.String",
+          "label": "Lower-level unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "RemainingVolumeAfterNesting",
+          "type": "Edm.Decimal",
+          "label": "Rem.Vol.After Nestng",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MaximumStackingFactor",
+          "type": "Edm.Byte",
+          "label": "Max. Stacking Factor",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CapacityUsage",
+          "type": "Edm.Decimal",
+          "label": "Capacity Usage",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_InternationalArticleNumber",
+          "target_entity_set": "A_ProductUnitsOfMeasureEAN",
+          "target_entity_type": "A_ProductUnitsOfMeasureEANType",
+          "relationship": "assoc_CEF4D81C16A99CC73F92DDE2E5BD8ED2"
+        }
+      ]
+    },
+    {
+      "name": "A_ProductUnitsOfMeasureEAN",
+      "entity_type": "A_ProductUnitsOfMeasureEANType",
+      "label": null,
+      "keys": [
+        "Product",
+        "AlternativeUnit",
+        "ConsecutiveNumber"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "AlternativeUnit",
+          "type": "Edm.String",
+          "label": "Display Unit/Measure",
+          "nullable": false,
+          "max_length": 3
+        },
+        {
+          "name": "ConsecutiveNumber",
+          "type": "Edm.String",
+          "label": "Consecutive number",
+          "nullable": false,
+          "max_length": 5
+        },
+        {
+          "name": "ProductStandardID",
+          "type": "Edm.String",
+          "label": "EAN/UPC",
+          "nullable": true,
+          "max_length": 18
+        },
+        {
+          "name": "InternationalArticleNumberCat",
+          "type": "Edm.String",
+          "label": "GTIN Category",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "IsMainGlobalTradeItemNumber",
+          "type": "Edm.Boolean",
+          "label": "Main EAN",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductValuation",
+      "entity_type": "A_ProductValuationType",
+      "label": null,
+      "keys": [
+        "Product",
+        "ValuationArea",
+        "ValuationType"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Material",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "ValuationArea",
+          "type": "Edm.String",
+          "label": "Valuation Area",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "ValuationType",
+          "type": "Edm.String",
+          "label": "Valuation Type",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "ValuationClass",
+          "type": "Edm.String",
+          "label": "Valuation Class",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "PriceDeterminationControl",
+          "type": "Edm.String",
+          "label": "Price Determ.",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "StandardPrice",
+          "type": "Edm.Decimal",
+          "label": "Standard price",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PriceUnitQty",
+          "type": "Edm.Decimal",
+          "label": "Price Unit",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "InventoryValuationProcedure",
+          "type": "Edm.String",
+          "label": "Price Control",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IsMarkedForDeletion",
+          "type": "Edm.Boolean",
+          "label": "Del. flag val. type",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "MovingAveragePrice",
+          "type": "Edm.Decimal",
+          "label": "Moving price",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ValuationCategory",
+          "type": "Edm.String",
+          "label": "Valuation Category",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductUsageType",
+          "type": "Edm.String",
+          "label": "Product Usage",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "ProductOriginType",
+          "type": "Edm.String",
+          "label": "Product Origin",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "IsProducedInhouse",
+          "type": "Edm.Boolean",
+          "label": "In-House Production",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProdCostEstNumber",
+          "type": "Edm.String",
+          "label": "ProdCostEst.No.",
+          "nullable": true,
+          "max_length": 12
+        },
+        {
+          "name": "ProjectStockValuationClass",
+          "type": "Edm.String",
+          "label": "Proj. stk val. class",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "ValuationClassSalesOrderStock",
+          "type": "Edm.String",
+          "label": "VC: Sales Order Stk",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "PlannedPrice1InCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Planned price 1",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PlannedPrice2InCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Planned price 2",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PlannedPrice3InCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Planned price 3",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "FuturePlndPrice1ValdtyDate",
+          "type": "Edm.DateTime",
+          "label": "Planned price date 1",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "FuturePlndPrice2ValdtyDate",
+          "type": "Edm.DateTime",
+          "label": "Planned price date 2",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "FuturePlndPrice3ValdtyDate",
+          "type": "Edm.DateTime",
+          "label": "Planned price date 3",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TaxBasedPricesPriceUnitQty",
+          "type": "Edm.Decimal",
+          "label": "Price Unit",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PriceLastChangeDate",
+          "type": "Edm.DateTime",
+          "label": "Last Price Change",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PlannedPrice",
+          "type": "Edm.Decimal",
+          "label": "Future Planned Price",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "PrevInvtryPriceInCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Previous Price",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "Currency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        }
+      ],
+      "navigation_properties": [
+        {
+          "name": "to_MLAccount",
+          "target_entity_set": "A_ProductMLAccount",
+          "target_entity_type": "A_ProductMLAccountType",
+          "relationship": "assoc_67C85D26184108D628B333796A403AD1"
+        },
+        {
+          "name": "to_MLPrices",
+          "target_entity_set": "A_ProductMLPrices",
+          "target_entity_type": "A_ProductMLPricesType",
+          "relationship": "assoc_9755DE63811EF3CD1C20BBC42BCACFDA"
+        },
+        {
+          "name": "to_ValuationAccount",
+          "target_entity_set": "A_ProductValuationAccount",
+          "target_entity_type": "A_ProductValuationAccountType",
+          "relationship": "assoc_862989CBC13157BA8998D1A46A3F23D5"
+        },
+        {
+          "name": "to_ValuationCosting",
+          "target_entity_set": "A_ProductValuationCosting",
+          "target_entity_type": "A_ProductValuationCostingType",
+          "relationship": "assoc_47008E6E2F34FEF010199EA6722A7021"
+        }
+      ]
+    },
+    {
+      "name": "A_ProductValuationAccount",
+      "entity_type": "A_ProductValuationAccountType",
+      "label": null,
+      "keys": [
+        "Product",
+        "ValuationArea",
+        "ValuationType"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "ValuationArea",
+          "type": "Edm.String",
+          "label": "Valuation Area",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "ValuationType",
+          "type": "Edm.String",
+          "label": "Valuation Type",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "CommercialPrice1InCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Commercial price 1",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CommercialPrice2InCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Commercial price 2",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "CommercialPrice3InCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Commercial price 3",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "DevaluationYearCount",
+          "type": "Edm.String",
+          "label": "Devaluation Ind.",
+          "nullable": true,
+          "max_length": 2
+        },
+        {
+          "name": "FutureEvaluatedAmountValue",
+          "type": "Edm.Decimal",
+          "label": "Future Price",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "FuturePriceValidityStartDate",
+          "type": "Edm.DateTime",
+          "label": "Valid from",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsLIFOAndFIFORelevant",
+          "type": "Edm.Boolean",
+          "label": "TRUE",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "LIFOValuationPoolNumber",
+          "type": "Edm.String",
+          "label": "LIFO Pool",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "TaxPricel1InCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Tax price 1",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TaxPrice2InCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Tax price 2",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "TaxPrice3InCoCodeCrcy",
+          "type": "Edm.Decimal",
+          "label": "Tax price 3",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "Currency",
+          "type": "Edm.String",
+          "label": "Currency",
+          "nullable": true,
+          "max_length": 5
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductValuationCosting",
+      "entity_type": "A_ProductValuationCostingType",
+      "label": null,
+      "keys": [
+        "Product",
+        "ValuationArea",
+        "ValuationType"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "ValuationArea",
+          "type": "Edm.String",
+          "label": "Valuation Area",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "ValuationType",
+          "type": "Edm.String",
+          "label": "Valuation Type",
+          "nullable": false,
+          "max_length": 10
+        },
+        {
+          "name": "IsMaterialCostedWithQtyStruc",
+          "type": "Edm.Boolean",
+          "label": "With Qty Structure",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "IsMaterialRelatedOrigin",
+          "type": "Edm.String",
+          "label": "Material origin",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "CostOriginGroup",
+          "type": "Edm.String",
+          "label": "Origin Group",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "CostingOverheadGroup",
+          "type": "Edm.String",
+          "label": "Overhead Group",
+          "nullable": true,
+          "max_length": 10
+        }
+      ],
+      "navigation_properties": []
+    },
+    {
+      "name": "A_ProductWorkScheduling",
+      "entity_type": "A_ProductWorkSchedulingType",
+      "label": null,
+      "keys": [
+        "Product",
+        "Plant"
+      ],
+      "properties": [
+        {
+          "name": "Product",
+          "type": "Edm.String",
+          "label": "Product",
+          "nullable": false,
+          "max_length": 40
+        },
+        {
+          "name": "Plant",
+          "type": "Edm.String",
+          "label": "Plant",
+          "nullable": false,
+          "max_length": 4
+        },
+        {
+          "name": "MaterialBaseQuantity",
+          "type": "Edm.Decimal",
+          "label": "Base quantity",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "UnlimitedOverDelivIsAllowed",
+          "type": "Edm.Boolean",
+          "label": "Unltd Overdelivery",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "OverDelivToleranceLimit",
+          "type": "Edm.Decimal",
+          "label": "Overdelivery Toler.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "UnderDelivToleranceLimit",
+          "type": "Edm.Decimal",
+          "label": "Underdelivery Toler.",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductionInvtryManagedLoc",
+          "type": "Edm.String",
+          "label": "Storage Location",
+          "nullable": true,
+          "max_length": 4
+        },
+        {
+          "name": "BaseUnit",
+          "type": "Edm.String",
+          "label": "Base Unit of Measure",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ProductProcessingTime",
+          "type": "Edm.Decimal",
+          "label": "Processing time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductionSupervisor",
+          "type": "Edm.String",
+          "label": "Prodn Supervisor",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ProductProductionQuantityUnit",
+          "type": "Edm.String",
+          "label": "Production unit",
+          "nullable": true,
+          "max_length": 3
+        },
+        {
+          "name": "ProdnOrderIsBatchRequired",
+          "type": "Edm.String",
+          "label": "Batch entry",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "TransitionMatrixProductsGroup",
+          "type": "Edm.String",
+          "label": "Material Grouping",
+          "nullable": true,
+          "max_length": 20
+        },
+        {
+          "name": "OrderChangeManagementProfile",
+          "type": "Edm.String",
+          "label": "Change overall prof.",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "MatlCompIsMarkedForBackflush",
+          "type": "Edm.String",
+          "label": "Backflush",
+          "nullable": true,
+          "max_length": 1
+        },
+        {
+          "name": "SetupAndTeardownTime",
+          "type": "Edm.Decimal",
+          "label": "Setup time",
+          "nullable": true,
+          "max_length": null
+        },
+        {
+          "name": "ProductionSchedulingProfile",
+          "type": "Edm.String",
+          "label": "Production Scheduling Profile",
+          "nullable": true,
+          "max_length": 6
+        },
+        {
+          "name": "TransitionTime",
+          "type": "Edm.Decimal",
+          "label": "Interoperation",
+          "nullable": true,
+          "max_length": null
+        }
+      ],
+      "navigation_properties": []
+    }
+  ]
+}
